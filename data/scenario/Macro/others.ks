@@ -77,7 +77,7 @@
     [clearfix]
     [hidemenubutton]
     [wait time="1500"]
-    [call storage="Utility/selectSave.ks" target="*SelectSave"]
+    [call storage="Utility/selectsave.ks" target="*SelectSave"]
     [StartLoading]
     [wait time="2500"]
     [StopLoading]

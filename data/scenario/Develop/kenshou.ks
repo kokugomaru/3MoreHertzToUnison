@@ -82,7 +82,7 @@
 [jump target="*Kenshou"]
 
 *DeleteSaveData
-[call storage="Utility/deleteSaveData.ks" ]
+[call storage="Utility/deletesavedata.ks" ]
 [jump target="*Kenshou"]
 
 *Backtitle
