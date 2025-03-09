@@ -16,7 +16,6 @@
     #桜良
     ロケの時はすっごくお世話になったよね。[p]
     
-    ; 深雪漫符：ぐるぐる
     [DispTrouble_Left]
     [ChangeCharaFace name="miyuki" face="sigh"]
     #深雪
@@ -44,7 +43,6 @@
     あれ、深雪ちゃん聞いてない？[r]
     これって帆南ちゃん企画したんだって話。[p]
 
-    ; 深雪漫符：はてなびっくり
     [DispQS_Left]
     [ChangeCharaFace name="miyuki" face="impatience"]
     #深雪
@@ -129,13 +127,11 @@
     それは勘弁して。[p]
 
     [chara_move name="sakura" left="600" anim="true" time="10" wait="true"]
-    ; 桜良漫符：キラキラ
-    [DispSparkle_Right]
+    [DispSparkle_Right x="1080"]
     #桜良
     絶対楽しいよ！[p]
 
     [FreeDispSparkle]
-    ; 深雪漫符：汗
     [DispSweat_Left]
     [ChangeCharaFace name="miyuki" face="precious"]
     #深雪

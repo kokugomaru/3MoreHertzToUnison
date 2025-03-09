@@ -19,7 +19,6 @@
 #深雪
 軽率に褒めないで頂戴、心臓止まるから。[p]
 
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="amazed"]
 #桜良

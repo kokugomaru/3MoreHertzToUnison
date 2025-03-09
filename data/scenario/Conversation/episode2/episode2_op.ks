@@ -11,8 +11,7 @@
 #深雪
 ううん...いったい何が...[p]
 
-; 深雪漫符：はてなびっくり
-[DispQS_Center]
+[DispQS_Center x="1030"]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪
 はっ、桜良！[p]
@@ -28,17 +27,20 @@
 いたた、しりもちついちゃった...[p]
 
 [ChangeCharaFace name="miyuki" face="sigh"]
+[chara_move name="miyuki" left="500" top="250" anim="true" time="1000" wait="true"]
 #深雪
 よかった、はぐれてなくて。[rhr]
 ほら、大丈夫？[p]
 
+[messageFalse]
 [PlayRustlingClothes]
-[chara_move name="sakura" top="120" time="10" wait="true"]
+[chara_move name="miyuki" left="160" top="120" anim="true" time="1000" wait="true"]
+[chara_move name="sakura" top="120" time="1000" anim="true" wait="true"]
+[messageTrue]
 [ChangeCharaFace name="sakura" face="normal"]
 #桜良
 うん！ありがとう！[p]
 
-; 桜良漫符：びっくり
 [DispSurprised_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -52,7 +54,6 @@
 マイクに触ってここに飛ばされたから、[rhr]
 さっきのステージはクリアできたんでしょうね。[p]
 
-; 桜良漫符：音符
 [DispMusicalNote_Right]
 [ChangeCharaFace name="sakura" face="close_mouth"]
 #桜良
@@ -98,7 +99,7 @@
 固くて押せないね。[p]
 
 [PlayKacha]
-; 深雪漫符：はてな
+[wait time="500"]
 [DispQuestion_Left]
 [ChangeCharaFace name="miyuki" face="normal"]
 #深雪

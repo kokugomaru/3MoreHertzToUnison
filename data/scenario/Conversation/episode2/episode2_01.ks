@@ -17,7 +17,6 @@
     撮影スタジオだからかな？[r]
     衣装とか着ないといけないのかも。[p]
 
-    ; 深雪漫符：もやもや
     [DispFuzzy_Left]
     [ChangeCharaFace name="miyuki" face="trouble"]
     #深雪
@@ -59,7 +58,6 @@
     部屋の隅にあるクローゼットが少し気になるわ。[r]
     衣装や小道具が入っているのかもしれないわね。[p]
 
-    ; 桜良漫符：はてな
     [DispQuestion_Right]
     [ChangeCharaFace name="sakura" face="surprise"]
     #桜良
@@ -130,7 +128,6 @@
 [elsif exp="f.isTentDown == 1 && f.isDressGet == -1"]
     ; 初回セリフ表示
     [if exp="f.isClickedCamera_first == 'true' "]
-        ; 桜良漫符：音符
         [DispMusicalNote_Center]
         [ShowSakura_Center face="smile"]
         #桜良

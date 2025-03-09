@@ -15,8 +15,7 @@
 #深雪
 確か雑誌の撮影が終わって帰る途中だったはず...[p]
 
-; 深雪漫符：はてな
-[DispQuestion_Center]
+[DispQuestion_Center x="1020"]
 [ChangeCharaFace name="miyuki" face="sigh"]
 #深雪
 そもそも、ここはどこなの？[p]
@@ -52,7 +51,6 @@
 いつの間にか見知らぬ部屋にいるけれど、[rhr]
 あなたはここについて何か知っている？[p]
 
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -65,7 +63,6 @@
 その様子だと知らないみたいね。[rhr]
 となると、私たち誘拐されたのかしら...[p]
 
-; 深雪漫符：もやもや
 [DispFuzzy_Left]
 [ChangeCharaFace name="miyuki" face="trouble"]
 #深雪
@@ -86,7 +83,6 @@ _　いや、そもそもこの部屋、出口らしき扉がない）[p]
 私たちはアイドルだから、[rhr]
 自分の好きなように躍らせたいのかもしれないわよ。[p]
 
-; 桜良漫符：ぐるぐる
 [DispTrouble_Right]
 [ChangeCharaFace name="sakura" face="trouble"]
 #桜良
@@ -103,7 +99,6 @@ _　特にステージの上のあなたは最高だもの！）[p]
 （こんな時にまで私の好感度を上げに来ないで！[rhr]
 _　きゅんきゅんしちゃうじゃない！）[p]
 
-; 桜良漫符：はてな
 [DispQuestion_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -142,7 +137,6 @@ _　しっかりしてるなあ。[p]
 ということは、これってもしかして撮影なんじゃない？[rhr]
 ドッキリ企画ってこと！？[p]
 
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ChangeCharaFace name="miyuki" face="impatience"]
 #深雪
@@ -168,7 +162,6 @@ _　しっかりしてるなあ。[p]
 最新技術なのかなあ！！[rhr]
 これってやっぱり脱出ゲームの撮影なんだよ！[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良

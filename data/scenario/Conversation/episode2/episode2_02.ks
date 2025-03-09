@@ -17,7 +17,6 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    ; 桜良漫符：もやもや
     [DispFuzzy_Right]
     [ShowSakura_Right face="trouble"]
     #桜良
@@ -29,7 +28,6 @@
     あっ、肩車したらどうかな！[r]
     私意外と力強いんだよ！！[p]
 
-    ; 深雪漫符：はてなびっくり
     [DispQS_Left]
     [ChangeCharaFace name="miyuki" face="impatience"]
     #深雪
@@ -64,7 +62,6 @@
     なんでそんなに肩車したいの！[r]
     恥ずかしいからダメ！[p]
 
-    ; 桜良漫符：ワイワイ
     [DispClamorously_Right]
     #桜良
     ええ～楽しそうなのに～[p]
@@ -91,7 +88,6 @@
         f.charaPosition[1] = 'right'
     [endscript]
     [ChangeCharaPosition]
-    ; 深雪漫符：汗
     [DispSweat_Left]
     [ShowMiyuki_Left face="impatience"]
     #深雪
@@ -107,7 +103,6 @@
     #桜良
     あっ、それでいうとお姫様抱っことかも憧れるよね！[p]
 
-    ; 深雪漫符：はてなびっくり
     [DispQS_Left]
     [ChangeCharaFace name="miyuki" face="surprise"]
     #深雪
@@ -115,7 +110,6 @@
 
     [FreeDispQS]
     [Jumping name="sakura"]
-    ; 桜良漫符：音符
     [DispMusicalNote_Right]
     [ChangeCharaFace name="sakura" face="smile"]
     #桜良
@@ -160,7 +154,6 @@
     そのままの形では使えないから、[r]
     少し加工する必要はあるけれどね。[p]
 
-    ; 桜良漫符：びっくり
     [DispSurprised_Right]
     [ChangeCharaFace name="sakura" face="normal"]
     #桜良
@@ -185,7 +178,6 @@
         f.charaPosition[1] = 'right'
     [endscript]
     [ChangeCharaPosition]
-    ; 深雪漫符：ぐるぐる
     [DispTrouble_Left]
     [ShowMiyuki_Left face="amazed"]
     #深雪
@@ -205,7 +197,6 @@
     #深雪
     そういえば開けられなくて困ったことないわね。[p]
 
-    ; 桜良漫符：キラキラ
     [DispSparkle_Right]
     [ChangeCharaFace name="sakura" face="surprise"]
     #桜良
@@ -243,8 +234,8 @@
 [messageFalse]
 [ChangeBackGround storage="episode2/studioroom_tentdown.png"]
 [PlayRustlingClothes]
+[wait time="500"]
 [messageTrue]
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ShowSakura_Right face="smile"]
 [ShowMiyuki_Left]
@@ -263,7 +254,6 @@
 #桜良
 そういえば、深雪ちゃんっていつから写真を始めたの？[p]
 
-; 深雪漫符：はてな
 [DispQuestion_Left]
 #深雪
 急になにかしら？[p]
@@ -274,7 +264,6 @@
 あ、その、純粋に気になって...[r]
 もしかして聞かれたくなかった？[p]
 
-; 深雪漫符：はてなびっくり
 [DispQS_Left]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪
@@ -299,7 +288,6 @@
 そんなところ。[r]
 まあ、本当に撮りたいものは、まだ撮ったことがないけれどね。[p]
 
-; 桜良漫符：びっくり
 [DispSurprised_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -313,14 +301,13 @@
 #桜良
 そんなに撮るのが難しいものなの？[p]
 
-; 深雪漫符：音符
 [DispMusicalNote_Left]
 [ChangeCharaFace name="miyuki" face="smile"]
 #深雪
 ふふ、内緒。[p]
 
 [FreeDispMusicalNote]
-[ChangeCharaFace name="sakura" face="amazed"]
+[ChangeCharaFace name="sakura" face="trouble"]
 #桜良
 そ、そんなあ～！[p]
 [endnolog]

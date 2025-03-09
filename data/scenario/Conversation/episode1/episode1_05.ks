@@ -1,8 +1,7 @@
 ;-------------------------------------------------------
 ; ライト
 ;-------------------------------------------------------
-; 舞台なし
-; 初回クリック時
+; 舞台なしで初回クリック時
 [if exp="f.isClickedLight_first == 'true' && f.isStageStatusGreen == 0"]
     [ShowMiyuki_Center face="trouble"]
     #深雪
@@ -13,7 +12,6 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    ; 桜良漫符：もやもや
     [DispFuzzy_Right]
     [ShowSakura_Right face="seriously"]
     #桜良
@@ -27,16 +25,13 @@
     [ChangeCharaFace name="miyuki" face="seriously"]
     #深雪
     賛成だわ。そうしましょう。[p]
-; 舞台なし
-; 二回目以降
+; 舞台なしで二回目以降
 [elsif exp="f.isClickedLight_first == 'false' && f.isStageStatusGreen == 0"]
     [ShowMiyuki_Center]
     #深雪
     このままだと届かないわ。[r]
     足場になるものがあればいいのだけど。[p]
-; 舞台あり
-; ライトカバー未所持
-; 初回クリック時
+; 舞台ありでライトカバー未所持、初回クリック時
 [elsif exp="f.isClickedLight_first == 'true' && f.isStageStatusGreen == 1 && f.isLightCoverGet == 0"]
     [ShowMiyuki_Center]
     #深雪
@@ -55,17 +50,13 @@
 
     #深雪
     ええ、見直してみましょう。[p]
-; 舞台あり
-; ライトカバー未所持
-; 二回目以降
+; 舞台ありでライトカバー未所持、二回目以降
 [elsif exp="f.isClickedLight_first == 'false' && f.isStageStatusGreen == 1 && f.isLightCoverGet == 0"]
     [ShowSakura_Center face="seriously"]
     #桜良
     うーん[r]
     そのあたりにあったはずなんだけどなあ...[p]
-; 舞台あり
-; ライトカバー所持
-; 初回クリック時
+; 舞台ありでライトカバー所持、初回クリック時
 [elsif exp="f.isClickedLight_first == 'true' && f.isStageStatusGreen == 1 && f.isLightCoverGet == 1"]
     [ShowMiyuki_Center]
     #深雪
@@ -97,7 +88,6 @@
     #深雪
     高いところ、苦手なんでしょう？[p]
 
-    ; 桜良漫符：はてなびっくり
     [DispQS_Right]
     [ChangeCharaFace name="sakura" face="surprise"]
     #桜良
@@ -127,7 +117,6 @@
     #深雪
     落ちる危険性が高いところが苦手なのね。[p]
 
-    ; 桜良漫符：ぷんぷん
     [DispAngry_Right]
     [ChangeCharaFace name="sakura" face="seriously"]
     #桜良
@@ -140,7 +129,6 @@
     これからも容赦なくせりの上にのってもらったり、[r]
     バンジージャンプ飛んでもらったりするから。[p]
 
-    ; 桜良漫符：はてなびっくり
     [DispQS_Right]
     [ChangeCharaFace name="sakura" face="amazed"]
     #桜良
@@ -153,7 +141,6 @@
     #桜良
     そんなあー...[p]
 
-    ; 深雪漫符：もやもや
     [DispFuzzy_Left]
     [ChangeCharaFace name="miyuki" face="seriously"]
     #深雪
@@ -169,9 +156,7 @@
     #桜良
     もう、お仕事でも頼りたいんだけどなあ！[r]
     じゃあ、お願いするね！[p]
-; 舞台あり
-; ライトカバー所持
-; 二回目以降
+; 舞台ありでライトカバー所持、二回目以降
 [elsif exp="f.isClickedLight_first == 'false' && f.isStageStatusGreen == 1 && f.isLightCoverGet == 1"]
     [ShowSakura_Center]
     #桜良
@@ -236,7 +221,6 @@
 むしろ得意よ。[r]
 せりの上から見た景色は特に好きね。[p]
 
-; 桜良漫符：ワイワイ
 [DispClamorously_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良

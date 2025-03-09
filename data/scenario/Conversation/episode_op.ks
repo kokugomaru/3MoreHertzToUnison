@@ -19,7 +19,6 @@
 「Aquarium」のお二人とも、収録お疲れ様です。[rhr]
 少し長引いたから疲れたでしょう？[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Center]
 #桜良
 大丈夫ですよ！[rhr]
@@ -49,7 +48,6 @@
 #深雪
 ......[p]
 
-; 深雪漫符：集中線
 [DispSaturatedLine_Left]
 [DarkenBackground]
 [ChangeCharaFace name="miyuki" face="precious"]
@@ -85,7 +83,6 @@ _　永久保存版として目覚ましにするのに...）[p]
 そうですね。[rhr]
 他の三人もばっちりでしたよ！[p]
 
-; 桜良漫符：もやもや
 [DispFuzzy_Right]
 [ChangeCharaFace name="sakura" face="trouble"]
 #桜良
@@ -132,7 +129,6 @@ _　なんてとても言えないわね）[p]
 大きなボウリング施設があるらしく、[rhr]
 先方からぜひ来てほしいと。[p]
 
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 [Jumping name="sakura"]
@@ -190,7 +186,6 @@ _　クールでかっこよく、涼しげな姿が求められていること�
 #深雪
 （でも、それでも...）[p]
 
-; 深雪漫符：集中線
 [DispSaturatedLine_Center]
 [ChangeCharaFace name="miyuki" face="precious"]
 #深雪
@@ -251,7 +246,6 @@ _　いやでも、あのコミュ力の天才をどう見習えばいいのよ�
 #桜良
 あれ、深雪ちゃん？[p]
 
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪

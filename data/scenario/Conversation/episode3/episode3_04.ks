@@ -1,8 +1,7 @@
 ;-------------------------------------------------------
 ; 収納ボックス
 ;-------------------------------------------------------
-; コンパス未設置
-; 初回調査時
+; コンパス未設置で初回調査時
 [if exp="f.isCompassGet != -1 && f.isClickedBox_first == 'true' "]
     ; 桜良漫符：びっくり
     [DispSurprised_Center]
@@ -20,7 +19,6 @@
     #深雪
     いかにも謎解きしてくださいと言わんばかりね。[p]
 
-    ; 桜良漫符：もやもや
     [DispFuzzy_Right]
     [ChangeCharaFace name="sakura" face="seriously"]
     #桜良
@@ -44,8 +42,7 @@
 
     #深雪
     はまりそうなものがないか、一度確認してみましょう。[p]
-; コンパス未設置
-; 二回目以降
+; コンパス未設置で二回目以降
 [elsif exp="f.isCompassGet != -1 && f.isClickedBox_first == 'false' "]
     [ShowSakura_Center face="close_mouth"]
     #桜良
@@ -70,7 +67,6 @@
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-; 桜良漫符：ワイワイ
 [DispClamorously_Right]
 [ShowSakura_Right face="smile"]
 #桜良
@@ -98,7 +94,7 @@
 [wait time="200"]
 [PlayWrong]
 [messageTrue]
-; 深雪漫符：びっくり
+[wait time="500"]
 [DispSurprised_Left]
 #深雪
 ボタンが反応するようになっているわね。[p]
@@ -145,14 +141,12 @@
 #深雪
 ごめんなさい、ちょっとふざけました。[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
 深雪ちゃんの貴重なボケ...！？[p]
 
 [FreeDispSparkle]
-; 深雪漫符：汗
 [DispSweat_Left]
 #深雪
 珍しがらないで。[r]
@@ -174,7 +168,6 @@
 [PlayOpenBox]
 [free layer="1" name="compass_set" time="10" wait="true"]
 [ChangeBackGroundOfEpisode3 storage_noon="episode3/futon_inbox.png" storage_night="episode3/futon_inbox_night.png"]
-; 桜良漫符：びっくり
 [DispSurprised_Center]
 [ShowSakura_Center face="surprise"]
 #桜良
@@ -186,7 +179,6 @@
     f.charaPosition[1] = 'right'
 [endscript]
 [ChangeCharaPosition]
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ShowMiyuki_Left face="seriously"]
 #深雪
@@ -240,13 +232,11 @@
     _　言うだけ野暮ね。）[p]
 [endif]
 
-; 深雪漫符：はてな
 [DispQuestion_Left]
 #深雪
 さて、中身は...布団セット？[p]
 
 [FreeDispQuestion]
-; 桜良漫符：ワイワイ
 [DispClamorously_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -267,7 +257,6 @@
 私もこの布団にくるまって泥のように寝た記憶しかないから、[r]
 気持ちはよくわかるわ。[p]
 
-; 桜良漫符：汗
 [DispSweat_Right]
 [ChangeCharaFace name="sakura" face="close_mouth"]
 #桜良
@@ -288,7 +277,6 @@
 #桜良
 私たちだけ登ったなんて、もったいないもんね！[p]
 
-; 深雪、桜良漫符：キラキラ
 [DispSparkle_Left]
 [DispSparkle_Right]
 #桜良と深雪

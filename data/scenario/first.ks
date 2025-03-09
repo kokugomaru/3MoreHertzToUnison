@@ -26,7 +26,7 @@
 [call storage="Macro/layer.ks"]
 [call storage="Macro/manpu.ks"]
 [call storage="Macro/others.ks"]
-[call storage="Macro/screenTransition.ks"]
+[call storage="Macro/screentransition.ks"]
 [call storage="Macro/se.ks"]
 
 ; フラグ初期化
@@ -34,7 +34,7 @@
 ; 各種設定情報の読み込み
 [call storage="Utility/settings.ks"]
 ; クライアント情報を取得
-[call storage="Utility/getClientInfo.ks"]
+[call storage="Utility/getclientinfo.ks"]
 ; メニューSEのパラメータを読み込み
 [call storage="Plugin/menuse.ks"]
 

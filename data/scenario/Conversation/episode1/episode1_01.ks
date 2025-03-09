@@ -46,7 +46,6 @@
     #桜良
     あれ、何も起きない...？[p]
 
-    ; 深雪漫符：ぐるぐる
     [DispTrouble_Left]
     [ChangeCharaFace name="miyuki" face="sigh"]
     #深雪

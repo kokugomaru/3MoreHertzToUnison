@@ -26,7 +26,6 @@
 いつの間にかせりも下がってるわね。[rhr]
 何か見覚えがあるような...[p]
 
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪
@@ -41,7 +40,6 @@
 #深雪
 これ、トラブルだらけで大変だったライブの時のマイク...[p]
 
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -57,7 +55,6 @@
 （前日のリハの時からスタッフ間でもめたり、[rhr]
 _　メンバーが転んで捻挫になりかかったり）[p]
 
-; 深雪漫符：ぐるぐる
 [DispTrouble_Left]
 [ChangeCharaFace name="miyuki" face="sigh"]
 #深雪
@@ -103,7 +100,6 @@ _　もう一生思い出したくもないわね...）[p]
 #桜良
 でも、深雪ちゃんはすっごく冷静だったよ！[p]
 
-; 深雪漫符：はてな
 [DispQuestion_Left]
 #深雪
 そうかしら？[p]
@@ -119,7 +115,6 @@ _　もう一生思い出したくもないわね...）[p]
 [wait time="2000"]
 [messageTrue]
 [ShowMiyuki_Left face="seriously"]
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ShowSakura_Right face="smile"]
 #桜良
@@ -141,7 +136,6 @@ _　もう一生思い出したくもないわね...）[p]
 深雪ちゃんの後ろ姿がすごく大きくて、[rhr]
 輝いてるみたいだったんだ。[p]
 
-; 深雪漫符：汗
 [DispSweat_Left]
 [ChangeCharaFace name="miyuki" face="blush"]
 #深雪
@@ -165,7 +159,6 @@ _　私、褒められてるの？桜良本人から？なんで？）[p]
 深雪ちゃんからしたら、思い出したくないかもだけど...[p]
 
 ; 画面演出解除：スチル表示
-; 深雪漫符：キラキラ
 [DispSparkle_Left]
 [ChangeCharaFace name="miyuki" face="seriously"]
 #深雪
@@ -190,7 +183,6 @@ _　え、なんで私録音してなかったのかしら？）[p]
 #桜良
 ...今も十分、かっこいいと思うけどな。[p]
 
-; 深雪漫符：はてな
 [DispQuestion_Left]
 [ChangeCharaFace name="miyuki" face="normal"]
 #深雪
@@ -198,7 +190,6 @@ _　え、なんで私録音してなかったのかしら？）[p]
 ごめんなさい、よく聞こえなくて...[p]
 
 [FreeDispQuestion]
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [Jumping name="sakura"]
 #桜良

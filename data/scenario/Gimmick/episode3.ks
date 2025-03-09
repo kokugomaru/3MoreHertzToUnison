@@ -175,6 +175,7 @@
 ; セーブポイント時にアイテムが見えてしまうためレイヤー1を非表示にする
 [layer1False]
 [SavePoint]
+[clearfix]
 ; スチル未完成のため基準背景を仮配置
 [layer1True]
 [ChangeBackGround storage="episode3/bedroom_night.png"]

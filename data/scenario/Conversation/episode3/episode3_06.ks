@@ -1,8 +1,7 @@
 ;-------------------------------------------------------
 ; ハンガー
 ;-------------------------------------------------------
-; ジャケット未所持
-; 初回調査時
+; ジャケット未所持で初回調査時
 [if exp="f.isJacketGet == 0 && f.isClickedHanger_first == 'true' "]
     [ShowSakura_Center face="seriously"]
     #桜良
@@ -23,7 +22,6 @@
     #桜良
     そうだったっけ、記憶力すごい...[p]
 
-    ; 深雪漫符：もやもや
     [DispFuzzy_Left]
     #深雪
     （ええ、仔細まで覚えているわ、[r]
@@ -59,7 +57,6 @@
     [messageTrue]
     [ControlButtons]
 
-    ; 桜良漫符：汗
     [DispSweat_Right]
     [ChangeCharaFace name="sakura" face="surprise"]
     #桜良
@@ -78,8 +75,7 @@
     #桜良
     そうだね。[r]
     これの使い方がわかるかもしれないし！[p]
-; ジャケット未所持
-; 二回目以降
+; ジャケット未所持で二回目以降
 [elsif exp="f.isJacketGet == 0 && f.isClickedHanger_first == 'false' "]
     [ShowSakura_Center face="trouble"]
     #桜良
@@ -107,7 +103,6 @@
     何故か商店街でライブしたり、[r]
     はたまたショートドラマつくったり！[p]
 
-    ; 深雪漫符：ぐるぐる
     [DispTrouble_Left]
     [ChangeCharaFace name="miyuki" face="sigh"]
     #深雪
@@ -115,14 +110,12 @@
     もはやデジタルタトゥーよ...[p]
 
     [FreeDispTrouble]
-    ; 桜良漫符：音符
     [DispMusicalNote_Right]
     [ChangeCharaFace name="sakura" face="smile"]
     #桜良
     深雪ちゃんのスケバン姿、可愛かったけどなあ！[p]
 
     [FreeDispMusicalNote]
-    ; 深雪漫符：ぷんぷん
     [DispAngry_Left]
     [ChangeCharaFace name="miyuki" face="amazed"]
     #深雪
@@ -137,8 +130,7 @@
     [ChangeCharaFace name="miyuki" face="smile"]
     #深雪
     まあね。結果良ければなんとやら、かしら。[p]
-; ジャケット所持
-; 初回調査時
+; ジャケット所持で初回調査時
 [elsif exp="f.isJacketGet == 1 && f.isClickedHanger_first_whenJacketGetting == 'true' "]
     [ShowMiyuki_Center]
     #深雪
@@ -166,8 +158,7 @@
             f.isClickedHanger_first_whenJacketGetting = 'false'
         [endscript]
     [endif]
-; ジャケット所持
-; 二回目以降
+; ジャケット所持で二回目以降
 [elsif exp="f.isJacketGet == 1 && f.isClickedHanger_first_whenJacketGetting == 'false' "]
     [ShowSakura_Center]
     #桜良
@@ -255,7 +246,6 @@
 登頂したとき、杖がなんだか相棒みたいに思えてね、[r]
 今私の家の玄関番になってるよ。[p]
 
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ChangeCharaFace name="miyuki" face="impatience"]
 #深雪
@@ -282,7 +272,6 @@
 #深雪
 桜良、貴方剣道をやっていたことは？[p]
 
-; 桜良漫符：はてな
 [DispQuestion_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -319,10 +308,12 @@ _　見えない手刀を出せるものかしら...？）[p]
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
+    [DispQS_Right]
     [ShowSakura_Right face="amazed"]
     #桜良
     さわった感じ、ガッチリ壁にくっついてるよ！？[p]
 
+    [FreeDispQS]
     #深雪
     仕掛けを解いたら外れるかもしれないじゃない？[p]
 

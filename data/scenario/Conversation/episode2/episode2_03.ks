@@ -1,8 +1,7 @@
 ;-------------------------------------------------------
 ; 簡易更衣室
 ;-------------------------------------------------------
-; カーテン未所持
-; 初回調査時
+; カーテン未所持で初回調査時
 [if exp="f.isCurtainGet == 0 && f.isClickedFittingRoom_first == 'true' "]
     [ShowSakura_Center face="close_mouth"]
     #桜良
@@ -22,7 +21,7 @@
     でもこんなところに置いてあるのちょっと変だよね。[p]
 
     #桜良
-    スタジオで衣装替えなんてしないもの。[p]
+    スタジオで衣装替えなんてしないはずだし。[p]
 
     [ChangeCharaFace name="miyuki" face="seriously"]
     #深雪
@@ -32,7 +31,6 @@
     更衣室があるのは、[r]
     そうする必要性があるということだと思うわ。[p]
 
-    ; 桜良漫符：電球
     [DispLighBulb_Right]
     [ChangeCharaFace name="sakura" face="smile"]
     #桜良
@@ -59,14 +57,12 @@
     [endif]
     [HideAll]
     [JumpStudioRoom]
-; カーテン未所持
-; 二回目以降
+; カーテン未所持で二回目以降
 [elsif exp="f.isCurtainGet == 0 && f.isClickedFittingRoom_first == 'false' "]
     [ShowSakura_Center face="close_mouth"]
     #桜良
     深雪ちゃんって普段のお洋服もクールでかっこいいよね。[p]
 
-    ; 桜良漫符：はてな
     [DispQuestion_Center]
     #桜良
     普段お洋服を買うときってどうしてるの？[r]
@@ -108,7 +104,6 @@
     #深雪
     そ、そうよね。不躾だったわ、ごめ...[p]
 
-    ; 桜良漫符：汗
     [DispSweat_Right]
     [ChangeCharaFace name="sakura" face="blush"]
     #桜良
@@ -123,15 +118,13 @@
     #深雪
     ...気にしなくていいのに。[p]
 
-    ; 桜良漫符：ぷんぷん
     [DispAngry_Right]
     #桜良
     私が気にするのー！！[p]
     [FreeDispAngry]
     [HideAll]
     [JumpStudioRoom]
-; カーテン所持
-; 初回調査時
+; カーテン所持で初回調査時
 [elsif exp="f.isCurtainGet == 1 && f.isClickedFittingRoom_first == 'true' "]
     [ShowMiyuki_Center]
     #深雪
@@ -165,7 +158,6 @@
     #桜良
     でも深雪ちゃんと協力すれば大丈夫だね！[p]
 
-    ; 深雪漫符：びっくり
     [DispSurprised_Left]
     [ChangeCharaFace name="miyuki" face="surprise"]
     #深雪
@@ -177,10 +169,9 @@
     あっ、深雪ちゃん先お着替えする？[r]
     手伝うよー！[p]
 
-    ; 深雪漫符：はてなびっくり
-    ; 深雪漫符：集中線
-    [DispQS_Left]
     [DispSaturatedLine_Left]
+    [wait time="500"]
+    [DispQS_Left]
     [ChangeCharaFace name="miyuki" face="blush"]
     #深雪
     えっ！？[p]
@@ -190,7 +181,6 @@
     #深雪
     ちょ、ちょっと待って心の準備が！[p]
 
-    ; 桜良漫符：はてな
     [DispQuestion_Right]
     [ChangeCharaFace name="sakura" face="close_mouth"]
     #桜良
@@ -201,7 +191,6 @@
     #深雪
     それはそうなんだけど...[p]
 
-    ; 深雪漫符：もやもや
     [DispFuzzy_Left]
     #深雪
     （あなたに密着されるほうに準備が必要なのよ！）[p]
@@ -210,8 +199,7 @@
     #深雪
     （うう、でも私ひとりじゃ無理だし...[r]
     _　覚悟を決めないと...）[p]
-; カーテン所持
-; 二回目以降
+; カーテン所持で二回目以降
 [elsif exp="f.isCurtainGet == 1 && f.isClickedFittingRoom_first == 'false' "]
     [ShowSakura_Center face="close_mouth"]
     #桜良
@@ -333,7 +321,6 @@
     #桜良
     えねるぎーまんたん？[p]
 
-    ; 深雪漫符：キラキラ
     [DispSparkle_Left]
     [ChangeCharaFace name="miyuki" face="precious"]
     #深雪
@@ -382,7 +369,6 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    ; 桜良漫符：はてなびっくり
     [DispQS_Right]
     [ShowSakura_Right face="surprise"]
     #桜良

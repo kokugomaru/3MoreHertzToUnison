@@ -19,8 +19,7 @@
 #深雪
 あの部屋で桜良とたくさん話して...[p]
 
-; 深雪漫符：びっくり
-[DispSurprised_Center]
+[DispSurprised_Center x="1020"]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪
 そうだ、桜良は！？[p]
@@ -47,10 +46,11 @@ _　脱出成功だよ！！」[p]
 ;[autostop]
 ;[skipstop]
 ;[FreeItemDisp]
-; 深雪漫符：ぐるぐる
+[DispTrouble_Center x="1040"]
 #深雪
 何なのこれは？[p]
 
+[FreeDispTrouble]
 #深雪
 ひとまず、あの部屋からは脱出できたということ？。[rhr]
 よく見ればここ、私の部屋ね...[p]
@@ -78,7 +78,7 @@ _　脱出成功だよ！！」[p]
     TG.ftag.startTag("pushlog", {text:html,} );
 [endscript]
 [PlayOpenDoor2]
-; 深雪漫符：集中線
+[wait time="500"]
 [DispSaturatedLine_Center]
 [ShowMiyuki_Center face="seriously"]
 #深雪
@@ -116,7 +116,6 @@ _　脱出成功だよ！！」[p]
 #深雪
 桜良、無事でよかった！[p]
 
-; 桜良漫符：音符
 [DispMusicalNote_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -136,10 +135,8 @@ _　脱出成功だよ！！」[p]
 #マネージャー
 ...企画？そんな話聞いてないですが...[p]
 
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ChangeCharaFace name="miyuki" face="seriously"]
 #桜良と深雪
@@ -159,7 +156,7 @@ _　脱出成功だよ！！」[p]
 夜更かし？[rhr]
 でももごっ！[p]
 
-; 深雪がシュバッと桜良にかぶさる
+[chara_move name="miyuki" left="650" anim="true" time="500" wait="true"]
 [ChangeCharaFace name="miyuki" face="normal"]
 #深雪
 はい、気をつけます。[rhr]
@@ -172,7 +169,7 @@ _　脱出成功だよ！！」[p]
 昨日の桜良と私、気づいたら家にいたんですが、[rhr]
 仕事が終わった後の私たちについて覚えていますか？[p]
 
-; 桜良と深雪が定位置に戻る
+[chara_move name="miyuki" left="160" anim="true" time="500" wait="true"]
 [ChangeCharaFace name="sakura" face="seriously"]
 #マネージャー
 ああ、お二人ともお仕事が終わった後眠ってしまったんです、[rhr]
@@ -183,7 +180,6 @@ _　脱出成功だよ！！」[p]
 本当にぐっすり、といった感じでした。[p]
 
 [ChangeCharaFace name="sakura" face="surprise"]
-; 深雪漫符：もやもや
 [DispFuzzy_Left]
 [ChangeCharaFace name="miyuki" face="close_eye"]
 #マネージャー
@@ -230,7 +226,6 @@ _　脱出成功だよ！！」[p]
     `●--------------------------------------------------------------●`;
     TG.ftag.startTag("pushlog", {text:html,} );
 [endscript]
-; 桜良漫符：汗
 [DispSweat_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -257,7 +252,6 @@ _　脱出成功だよ！！」[p]
 #桜良
 じゃあ、二人で同じ夢を見てたってことなのかな？[p]
 
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪
@@ -272,7 +266,6 @@ _　自宅に送ってくれたのなら...）[p]
 #深雪
 昨日のことは、本当に私たちが一緒に見ていた夢？[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -304,7 +297,6 @@ _　これ以上考えても結論は出ないわね）[p]
 #桜良
 そうだね、流石に言っても信じてもらえないよね。[p]
 
-; 桜良漫符：音符
 [DispMusicalNote_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -332,7 +324,6 @@ _　今思い返すと...）[p]
 #深雪
 あ、うん。そうね。[p]
 
-; 桜良漫符：はてな
 [DispQuestion_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -356,7 +347,6 @@ _　桜良の笑顔が魅力的で目を合わせられない...）[p]
 [PlayRun]
 [wait time="5000"]
 [messageTrue]
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="amazed"]
 #桜良
@@ -368,6 +358,7 @@ _　桜良の笑顔が魅力的で目を合わせられない...）[p]
 私何かしちゃった！？[p]
 
 ; 画面演出：スチル表示予定
+[HideSakura]
 #深雪
 違うわ。[p]
 

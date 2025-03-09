@@ -134,7 +134,9 @@
     [free layer="1" name="inventory7" time="10" wait="true"]
     ;　アイテム画像
     [free layer="2" name="cable" time="10" wait="true"]
-    [free layer="2" name="driver" time="10" wait="true"]
+    [if exp="f.isDriverGet == 1"]
+        [free layer="2" name="driver" time="10" wait="true"]
+    [endif]
     [free layer="2" name="lightcover" time="10" wait="true"]
     [free layer="2" name="hanger" time="10" wait="true"]
     [free layer="2" name="pencil" time="10" wait="true"]
