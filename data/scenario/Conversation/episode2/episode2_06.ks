@@ -26,7 +26,6 @@
 #深雪
 しないと思うわよ。[p]
 
-; 桜良漫符：汗
 [DispSweat_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良

@@ -1,8 +1,7 @@
 ;-------------------------------------------------------
 ; 紙
 ;-------------------------------------------------------
-; アイブロウペンシル未所持
-; 初回調査時
+; アイブロウペンシル未所持で初回調査時
 [if exp="f.isPencilGet == 0 && f.isClickedPaper_first == 'true' "]
     [ShowSakura_Center face="close_mouth"]
     #桜良
@@ -54,8 +53,7 @@
     [endif]
     [HideAll]
     [JumpStudioRoom]
-; アイブロウペンシル未所持
-; 二回目以降
+; アイブロウペンシル未所持で二回目以降
 [elsif exp="f.isPencilGet == 0 && f.isClickedPaper_first == 'false' "]
     [ShowSakura_Center face="seriously"]
     #桜良
@@ -101,8 +99,7 @@
     ええ、お願い。[p]
     [HideAll]
     [JumpStudioRoom]
-; アイブロウペンシル所持
-; 二回目以降
+; アイブロウペンシル所持で二回目以降
 [elsif exp="f.isPencilGet == 1 && f.isClickedSpeaker_first_whenPencilGetting == 'false' "]
     ; 深雪漫符：もやもや
     [DispFuzzy_Center]
@@ -145,8 +142,7 @@
     [ChangeCharaFace name="miyuki" face="sigh"]
     #深雪
     お願い。[p]
-; アイブロウペンシル所持
-; 初回調査時（ペンシル未所持の時に調べていない場合）
+; アイブロウペンシル所持で初回調査時（ペンシル未所持の時に調べていない場合）
 [elsif exp="f.isPencilGet == 1 && f.isClickedPaper_first == 'true' "]
     [ShowSakura_Center face="close_mouth"]
     #桜良
@@ -190,8 +186,7 @@
             f.isClickedSpeaker_first_whenPencilGetting = 'false'
         [endscript]
     [endif]
-; アイブロウペンシル所持
-; 初回調査時（ペンシル未所持の時に一度調べている場合）
+; アイブロウペンシル所持で初回調査時（ペンシル未所持の時に一度調べている場合）
 [elsif exp="f.isPencilGet == 1 && f.isClickedPaper_first == 'false' "]
     [ShowSakura_Center face="surprise"]
     #桜良

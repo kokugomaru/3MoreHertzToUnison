@@ -24,7 +24,6 @@
     #深雪
     すごくわかるわ。[p]
 
-    ; 桜良漫符：ワイワイ
     [DispClamorously_Right]
     [ChangeCharaFace name="sakura" face="smile"]
     #桜良
@@ -85,6 +84,7 @@
     #桜良
     えと、私全然やるよ...？[p]
 
+    [DispSweat_Left]
     #深雪
     だ、大丈夫よ。[r]
     これはねじに突き刺して回すだけだもの。[p]
@@ -105,7 +105,6 @@
     #深雪
     ありがとう、桜良。[p]
 
-    ; 深雪漫符：汗
     [DispSweat_Left]
     [ChangeCharaFace name="miyuki" face="blush"]
     #深雪
@@ -145,6 +144,7 @@
     #桜良
     えと、私全然やるよ...？[p]
 
+    [DispSweat_Left]
     #深雪
     だ、大丈夫よ。[r]
     これはねじに突き刺して回すだけだもの。[p]
@@ -165,7 +165,6 @@
     #深雪
     ありがとう、桜良。[p]
 
-    ; 深雪漫符：汗
     [DispSweat_Left]
     [ChangeCharaFace name="miyuki" face="blush"]
     #深雪
@@ -201,7 +200,6 @@ _　ねじ回す方向一度間違えたけど...）[p]
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ShowSakura_Right face="smile"]
 #桜良
@@ -238,7 +236,6 @@ _　不完全な状態なんて絶対に許されないもの）[p]
 （決めた。[r]
 _　私、本格的にステージ演出勉強する）[p]
 
-; 深雪漫符：キラキラ
 [DispSparkle_Left]
 [ChangeCharaFace name="miyuki" face="precious"]
 #深雪

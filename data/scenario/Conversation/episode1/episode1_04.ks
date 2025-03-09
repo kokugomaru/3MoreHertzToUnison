@@ -3,7 +3,6 @@
 ;-------------------------------------------------------
 ; 箱未開封時
 [if exp="f.isClickedToolBox_first == 'true' && f.leftNum != 4 && f.centerNum != 5 && f.rightNum != 6"]
-    ; 桜良漫符：はてな
     [DispQuestion_Center]
     [ShowSakura_Center face="surprise"]
     #桜良
@@ -39,7 +38,6 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    ; 桜良漫符：キラキラ
     [DispSparkle_Right]
     [ShowSakura_Right face="smile"]
     ;[autostop]
@@ -55,7 +53,6 @@
     #深雪
     ……大したことじゃないわ。[p]
 
-    ; 深雪漫符：集中線
     [DispSaturatedLine_Left]
     [ChangeCharaFace name="miyuki" face="precious"]
     #深雪
@@ -74,7 +71,6 @@
     そういえば、この場所って[r]
     私たちのファーストライブ会場に似てるような気がしない？[p]
 
-    ; 深雪漫符：びっくり
     [DispSurprised_Left]
     [ChangeCharaFace name="miyuki" face="normal"]
     #深雪

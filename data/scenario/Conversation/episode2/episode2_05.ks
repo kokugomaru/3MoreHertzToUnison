@@ -2,7 +2,6 @@
 ; 衣装
 ;-------------------------------------------------------
 ; 画面演出：アイテム子画面表示：衣装アイコン
-; 桜良漫符：びっくり
 [DispSurprised_Center]
 [ShowSakura_Center face="surprise"]
 #桜良
@@ -15,7 +14,6 @@
     f.charaPosition[1] = 'right'
 [endscript]
 [ChangeCharaPosition]
-; 深雪漫符：びっくり
 [DispSurprised_Left]
 [ShowMiyuki_Left face="surprise"]
 ;[autostop]
@@ -47,7 +45,6 @@ _　私が見逃しているだけなのか、それとも...）[p]
 恐らくそうでしょうね。[r]
 ご丁寧に簡易更衣室まで備え付けてあったから。[p]
 
-; 桜良漫符：音符
 [DispMusicalNote_Right]
 [ChangeCharaFace name="sakura" face="close_eye"]
 #桜良
@@ -80,7 +77,6 @@ _　私が見逃しているだけなのか、それとも...）[p]
 桜良なんて顔がこわばりすぎて、[r]
 マネージャーに能面みたいって言われてなかった？[p]
 
-; 桜良漫符：ぷんぷん
 [DispAngry_Right]
 [ChangeCharaFace name="sakura" face="blush"]
 #桜良
@@ -93,7 +89,6 @@ _　私が見逃しているだけなのか、それとも...）[p]
 それを言うなら深雪ちゃんだって、[r]
 ロボットみたいになってたの覚えてるもの！[p]
 
-; 深雪漫符：汗
 [DispSweat_Left]
 [ChangeCharaFace name="miyuki" face="blush"]
 #深雪

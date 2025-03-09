@@ -50,7 +50,6 @@ _　二人同じ画角に入っていればそれでいいかと...）[p]
 #桜良
 それならポーズもこだわりたいなーって。[p]
 
-; 桜良漫符：音符
 [DispMusicalNote_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -141,7 +140,6 @@ _　アイドルやることを決めたんだけど）[p]
 #深雪
 （でも、尊敬しているのは事実よ）[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -174,7 +172,6 @@ _　アイドルやることを決めたんだけど）[p]
 ...私だって、深雪ちゃんのこと、[rhr]
 誰よりもすごいアイドルって思ってるよ。[p]
 
-; 深雪漫符：はてなびっくり
 [DispQS_Left]
 [ChangeCharaFace name="miyuki" face="blush"]
 #深雪

@@ -10,15 +10,14 @@
 [endscript]
 [ShowMiyuki_Center]
 #深雪
-紅葉を見に行きたいって言うから、[rhr]
-てっきり紅葉かと思ってたわ。[p]
+紅葉狩りがしたいとは聞いていたけれど、[rhr]
+まさかメタセコイヤとはね。[p]
 
 [iscript]
     f.charaPosition[0] = 'miyuki'
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-; 桜良漫符：音符
 [DispMusicalNote_Right]
 [ShowSakura_Right face="smile"]
 #桜良
@@ -34,7 +33,6 @@
 それなら今日は思いっきり楽しんじゃおう！[rhr]
 ほらほら、れっつごー！[p]
 
-; 深雪漫符：汗
 [DispSweat_Left]
 [ChangeCharaFace name="miyuki" face="surprise"]
 #深雪
@@ -71,7 +69,6 @@ _　うぬぼれてもいいのかしら？）[p]
 桜良と完全オフで一緒にいられるのよ。[rhr]
 どこだって嬉しいに決まってるわ。[p]
 
-; 桜良漫符：汗
 [DispSweat_Right]
 [ChangeCharaFace name="sakura" face="blush"]
 #桜良
@@ -87,7 +84,6 @@ _　うぬぼれてもいいのかしら？）[p]
 でも風が気持ちいいし、一面の自然もきれいで、[rhr]
 着てよかったとは思っているわ。[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -119,7 +115,6 @@ _　うぬぼれてもいいのかしら？）[p]
 #深雪
 （ほっ...）[p]
 
-; 桜良漫符：はてな
 [DispQuestion_Right]
 [ChangeCharaFace name="sakura" face="close_mouth"]
 #桜良
@@ -148,13 +143,14 @@ _　あまりにも記憶が鮮明すぎる）[p]
 それにしては居心地の良すぎる空間だった。[p]
 
 #深雪
-あの部屋は、私たちを害そうとしたものではないんじゃないかしら。[rhr]
+あの部屋は、私たちを害そうとしたものではないんじゃないかしら。[p]
 
 [Jumping name="sakura"]
 [ChangeCharaFace name="sakura" face="normal"]
 #桜良
 最初から最後まで楽しかったよね！[p]
 
+[ChangeCharaFace name="miyuki" face="smile"]
 #深雪
 ええ。今なら手放しでそう言えるわ。[p]
 
@@ -225,24 +221,17 @@ _　あまりにも記憶が鮮明すぎる）[p]
 [autostop]
 [cancelskip]
 [DeleteDispLocation]
-[blackout exp="f.isRoomLightNight == 1" storage_1="episode3/bedroom_night.png" storage_2="episode3/bedroom.png"]
 [PlayPhotographing]
 [flasheffect]
+[blackout exp="f.isRoomLightNight == 1" storage_1="episode3/bedroom_night.png" storage_2="episode3/bedroom.png"]
 [messageTrue]
 [wait time="500"]
 [messageTrue]
 ; 画面演出：スチル表示：桜良がぎゅっと深雪に抱き着いて撮ったツーショット写真
 
-[ShowMiyuki_Center]
 #深雪
 桜良、あなた案外やんちゃなのね。[p]
 
-[iscript]
-    f.charaPosition[0] = 'miyuki'
-    f.charaPosition[1] = 'left'
-[endscript]
-[ChangeCharaPosition]
-[ShowSakura_Right]
 #桜良
 ふっふっふ、驚いた？[p]
 
@@ -253,7 +242,6 @@ _　あまりにも記憶が鮮明すぎる）[p]
 ふふっ、こちらこそよろしくね。[p]
 
 [Freelayer1]
-[HideAll]
 [ChangeBackGround storage="episode1/white.png" time="2000"]
 #謎のメッセージカード
 「脱出おめでとう！！[rhr]

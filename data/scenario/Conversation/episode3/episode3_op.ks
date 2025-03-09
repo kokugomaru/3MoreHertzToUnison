@@ -32,12 +32,13 @@ _　お世辞じゃないってことなの！？）[p]
 あ、あの、そうね。[rhr]
 早くここから脱出しないといけないんだったわ。[p]
 
-; 桜良漫符：汗
+[DispSweat_Right]
 [ChangeCharaFace name="sakura" face="normal"]
 #桜良
 そうそう！[rhr]
 ごめんね、急にボタン押して...[p]
 
+[FreeDispSweat]
 [ChangeCharaFace name="miyuki" face="normal"]
 #深雪
 大丈夫よ。次からは気を付けて。[rhr]
@@ -66,7 +67,6 @@ _　お世辞じゃないってことなの！？）[p]
 え、ええ。[rhr]
 まさか...[p]
 
-; 桜良、深雪漫符：はてなびっくり
 [DispQS_Left]
 [DispQS_Right]
 #桜良と深雪
@@ -91,7 +91,6 @@ _　窓の外の風景は違うけれど、内装はそのままじゃない！�
 #深雪
 (ここの壁のシミ、見覚えがある...)[p]
 
-; 深雪漫符：もやもや
 [DispFuzzy_Left]
 #深雪
 (ここまで忠実に再現できるものなのかしら...？)[p]
@@ -103,7 +102,6 @@ _　窓の外の風景は違うけれど、内装はそのままじゃない！�
 すごく大変だったろうなあ、[rhr]
 このお部屋つくるの...[p]
 
-; 桜良漫符：はてな
 [DispQuestion_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -115,7 +113,6 @@ _　窓の外の風景は違うけれど、内装はそのままじゃない！�
 #深雪
 それを言うなら桜良もよ。[p]
 
-; 桜良漫符：ワイワイ
 [DispClamorously_Right]
 [ChangeCharaFace name="sakura" face="smile"]
 #桜良
@@ -130,7 +127,6 @@ _　窓の外の風景は違うけれど、内装はそのままじゃない！�
 #深雪
 たぶん、最新技術よ。[p]
 
-; 桜良漫符：キラキラ
 [DispSparkle_Right]
 #桜良
 す、すごすぎるね...！[p]

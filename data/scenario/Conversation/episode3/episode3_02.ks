@@ -1,8 +1,7 @@
 ;-------------------------------------------------------
 ; 張り紙
 ;-------------------------------------------------------
-; 布団未所持
-; 初回調査時
+; 布団未所持で初回調査時
 [if exp="f.isFutonGet == 0 && f.isClickedPoster_first == 'true' "]
     [ShowMiyuki_Center face="seriously"]
     #深雪
@@ -21,7 +20,6 @@
     脱出のヒントだとは思うけれど...[r]
     桜良、何か心当たりはある？[p]
 
-    ; 桜良漫符：はてな
     [DispQuestion_Right]
     #桜良
     まる、さんかく、しかく...？[p]
@@ -37,13 +35,15 @@
 
     [PlayFootStep]
     [HideMiyuki]
+    [messageFalse]
+    [wait time="4000"]
     [iscript]
         f.charaPosition[0] = 'sakura'
         f.charaPosition[1] = 'center'
     [endscript]
     [ChangeCharaPosition]
-    ; 桜良漫符：もやもや
-    [DispFuzzy_Right]
+    [messageTrue]
+    [DispFuzzy_Center]
     #桜良
     ごろ合わせとかかな...？[p]
 
@@ -52,8 +52,7 @@
     #桜良
     あれ、深雪ちゃんいつのまにそっちに！？[r]
     待ってー！[p]
-; 布団未所持
-; 二回目以降
+; 布団未所持で二回目以降
 [elsif exp="f.isFutonGet == 0 && f.isClickedPoster_first == 'false' "]
     [ShowSakura_Center face="seriously"]
     #桜良
@@ -80,7 +79,6 @@
     #深雪
     問題はほかの図形に何も文字がないことだけれど。[p]
 
-    ; 桜良漫符：もやもや
     [DispFuzzy_Right]
     [ChangeCharaFace name="sakura" face="trouble"]
     #桜良
@@ -108,7 +106,6 @@
     部屋のあちこちにヒントを隠すなんて、[r]
     手の込んだことをするものね。[p]
 
-    ; 桜良漫符：汗
     [DispSweat_Right]
     [ChangeCharaFace name="sakura" face="trouble"]
     #桜良
@@ -136,7 +133,6 @@
     深雪ちゃんだって、私が腕を擦りむいたとき、[r]
     すごい速さで手当てしてくれたよね！[p]
 
-    ; 桜良漫符：ワイワイ
     [DispClamorously_Right]
     [ChangeCharaFace name="sakura" face="smile"]
     #桜良
@@ -164,7 +160,6 @@
     #深雪
     そうなったらあなたの方向感覚も役に立ちそう。[p]
 
-    ; 桜良漫符：電球
     [DispLighBulb_Right]
     #桜良
     そういうことなら、[r]

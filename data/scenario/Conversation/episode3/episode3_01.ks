@@ -18,7 +18,6 @@
 #深雪
 正確には一年と二か月と三日前よ。[p]
 
-; 桜良漫符：はてな
 [DispQuestion_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
@@ -42,14 +41,15 @@
 ...ん？[p]
 
 [PlayGosoGoso2]
-; 深雪漫符：ぐるぐる
+[messageFalse]
+[wait time="1000"]
+[messageTrue]
 [DispTrouble_Left]
 [ChangeCharaFace name="miyuki" face="trouble"]
 #深雪
 コンパスしか入ってない...[p]
 
 [FreeDispTrouble]
-; 桜良漫符：はてなびっくり
 [DispQS_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
