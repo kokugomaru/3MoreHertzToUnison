@@ -16,9 +16,7 @@
 [ChangeCharaPosition]
 [DispSurprised_Left]
 [ShowMiyuki_Left face="surprise"]
-;[autostop]
-;[skipstop]
-;[ItemDisp storage="../image/episode2/dreass.png"]
+[ItemDisp storage="../image/episode2/dress.png" x="760" width="350" height="350"]
 #深雪
 よくある安物のコスプレ衣装でもないみたいね。[r]
 私たちが実際に使っていた本物だわ。[p]
@@ -35,6 +33,7 @@ _　やっぱりこれは撮影？）[p]
 （でも、部屋を探しても隠しカメラがあるようには見えなかった。[r]
 _　私が見逃しているだけなのか、それとも...）[p]
 
+[FreeItemDisp]
 [ChangeCharaFace name="sakura" face="normal"]
 #桜良
 ここに衣装があるってことは、[r]

@@ -203,6 +203,24 @@
         f.isOpenDesc_07 = 'true'
     [endscript]
 [endif]
+; 体験版の場合はタイトル画面に遷移する
+[if exp="sf.trialVerMode == 'true' "]
+    [iscript]
+        f.isFirstGameClear = 'true'
+    [endscript]
+    *TrialVerModeEndModal
+    [clearfix]
+    [autostop]
+    [cancelskip]
+    [DispModal text="体験版はここまでです<br>続きは製品版でお楽しみください" y="440" storage="Gimmick/episode1.ks" target_yes="YesButton" target_no="*NoButton"]
+    *YesButton
+    [FadeoutBGM]
+    [FreeModal]
+    [jump storage="title.ks" target="*TopPage"]
+    *NoButton
+    [FreeModal]
+    [jump target="*TrialVerModeEndModal"]
+[endif]
 [SavePoint]
 ; 思い出2へ移動する
 [jump storage="Gimmick/episode2.ks" cond="f.isEpisode1Clear == 1"]

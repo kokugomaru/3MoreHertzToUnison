@@ -28,26 +28,20 @@
     数字の手がかりになりそうなものを探してみましょう。[p]
 ; 箱開封時
 [elsif exp="f.leftNum == 4 && f.centerNum == 5 && f.rightNum == 6"]
-    [ShowMiyuki_Center]
+    [ItemDisp storage="../image/episode1/cable.png"]
+    [ShowMiyuki_Left]
     #深雪
     箱が空いたようね。[r]
     中身は...ケーブルかしら。[p]
 
-    [iscript]
-        f.charaPosition[0] = 'miyuki'
-        f.charaPosition[1] = 'left'
-    [endscript]
-    [ChangeCharaPosition]
     [DispSparkle_Right]
     [ShowSakura_Right face="smile"]
-    ;[autostop]
-    ;[skipstop]
-    ;[ItemDisp storage="../image/episode1/cable.png"]
     #桜良
     深雪ちゃん、すごい！[r]
     ステージの装飾がヒントだったなんて、[r]
     私全然気づかなかった！[p]
 
+    [FreeItemDisp]
     [FreeDispSparkle]
     [ChangeCharaFace name="miyuki" face="close_eye"]
     #深雪

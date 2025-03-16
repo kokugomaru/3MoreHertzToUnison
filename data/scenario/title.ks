@@ -25,12 +25,19 @@
     [elsif exp="sf.bootMode == 'kenshou' "]
         [ptext layer="fix" text="検証" x="1810" y="90" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white"]
     [endif]
+    ; 体験版表記
+    [ptext layer="fix" text="体験版：" x="1728" y="120" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white"]
+    [if exp="sf.trialVerMode == 'true' "]
+        [ptext layer="fix" text="◯" x="1810" y="120" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white"]
+    [else]
+        [ptext layer="fix" text="ー" x="1810" y="120" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white"]
+    [endif]
     ; 使用端末表記
-    [ptext layer="fix" text="使用端末：" x="1708" y="120" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
-    [ptext layer="fix" text="&sf.usingDevice" x="1810" y="120" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
+    [ptext layer="fix" text="使用端末：" x="1708" y="150" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
+    [ptext layer="fix" text="&sf.usingDevice" x="1810" y="150" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
     ; 使用ブラウザ表記
-    [ptext layer="fix" text="使用ブラウザ：" x="1640" y="150" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
-    [ptext layer="fix" text="&sf.usingBrowser" x="1785" y="150" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
+    [ptext layer="fix" text="使用ブラウザ：" x="1640" y="180" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
+    [ptext layer="fix" text="&sf.usingBrowser" x="1785" y="180" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white" align="right"]
 [endif]
 ; タイトル画面をクリックしたら選択画面を表示する
 [l]
