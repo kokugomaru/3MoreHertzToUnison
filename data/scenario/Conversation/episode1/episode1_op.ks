@@ -117,8 +117,6 @@ _　きゅんきゅんしちゃうじゃない！）[p]
 #深雪
 見せて。[p]
 
-;[autostop]
-;[skipstop]
 ;[ItemDisp storage=""]
 #深雪
 『仲良く謎解きしないと出られない部屋』？[p]
@@ -144,8 +142,6 @@ _　しっかりしてるなあ。[p]
 あっ！[p]
 
 [FreeDispSurprised]
-;[autostop]
-;[skipstop]
 ;[FreeItemDisp]
 ; 桜良漫符：びっくり
 [DispSurprised_Right]

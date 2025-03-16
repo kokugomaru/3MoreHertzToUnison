@@ -29,9 +29,12 @@
 #深雪
 えっ、これは...[p]
 
-;[autostop]
-;[skipstop]
-;[ItemDisp storage="../image/episode1/cable.png"]
+[iscript]
+    f.charaPosition[0] = 'miyuki'
+    f.charaPosition[1] = 'left'
+[endscript]
+[ChangeCharaPosition]
+;[ItemDisp storage=""]
 [ChangeCharaFace name="miyuki" face="trouble"]
 #深雪
 「おめでとう！[rhr]
@@ -43,9 +46,12 @@ _　脱出成功だよ！！」[p]
 #深雪
 「追伸：もっと勇気を出すといいことあるかも！」...？[p]
 
-;[autostop]
-;[skipstop]
 ;[FreeItemDisp]
+[iscript]
+    f.charaPosition[0] = 'miyuki'
+    f.charaPosition[1] = 'center'
+[endscript]
+[ChangeCharaPosition]
 [DispTrouble_Center x="1040"]
 #深雪
 何なのこれは？[p]

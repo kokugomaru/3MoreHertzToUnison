@@ -75,9 +75,11 @@
 
 ; アイテム小画面表示
 [macro name="ItemDisp"]
+    [autostop]
+    [skipstop]
     [layer2True]
     [DarkenBackground]
-    [image storage="%storage" layer="2" x="780" y="350" width="250" height="250" name="itemDisp" time="10" wait="true"]
+    [image storage="%storage" layer="2" x="%x|780" y="%y|350" width="%width|250" height="%height|250" name="itemDisp" time="10" wait="true"]
 [endmacro]
 
 ; アイテム小画面表示を解除
