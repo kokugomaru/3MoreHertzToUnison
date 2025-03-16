@@ -15,6 +15,8 @@
     sf.distribution = $.isElectron() // PCアプリの場合True
     // 起動モード
     sf.bootMode = 'develop' // 開発:develop 検証:kenshou 通常:normal
+    // 体験版
+    sf.trialVerMode = 'false'
     // エクストラページの表示
     sf.isExtraPage = 'true'
     // オープニングのシナリオスキップ
