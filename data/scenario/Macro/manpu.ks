@@ -121,7 +121,7 @@
 [macro name="DispQS_Left"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
         [playse storage="manpu/qs.m4a" loop="false"]
-        [image storage="../image/manpu/QS.png" layer="3" x="%x|630" y="150" name="QS" time="10" wait="true"]
+        [image storage="../image/manpu/qs.png" layer="3" x="%x|630" y="150" name="QS" time="10" wait="true"]
     [endif]
 [endmacro]
 
@@ -129,7 +129,7 @@
 [macro name="DispQS_Center"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
         [playse storage="manpu/qs.m4a" loop="false"]
-        [image storage="../image/manpu/QS.png" layer="3" x="%x|1070" y="150" name="QS" time="10" wait="true"]
+        [image storage="../image/manpu/qs.png" layer="3" x="%x|1070" y="150" name="QS" time="10" wait="true"]
     [endif]
 [endmacro]
 
@@ -137,7 +137,7 @@
 [macro name="DispQS_Right"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
         [playse storage="manpu/qs.m4a" loop="false"]
-        [image storage="../image/manpu/QS.png" layer="3" x="%x|1480" y="150" name="QS" time="10" wait="true"]
+        [image storage="../image/manpu/qs.png" layer="3" x="%x|1480" y="150" name="QS" time="10" wait="true"]
     [endif]
 [endmacro]
 
