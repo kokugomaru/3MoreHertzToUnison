@@ -91,7 +91,9 @@
 
 ; フラッシュ
 [macro name="flasheffect"]
-    [mask effect="fadeIn" color="%color|0xF5F5F5" graphic="%graphic" folder="image" time="%intime|80"]
-    [mask_off effect="fadeOut" time="%outtime|160"]
+    [if exp="TYRANO.kag.stat.is_skip == false"]
+        [mask effect="fadeIn" color="%color|0xF5F5F5" graphic="%graphic" folder="image" time="%intime|80"]
+        [mask_off effect="fadeOut" time="%outtime|160"]
+    [endif]
 [endmacro]
 [return]
