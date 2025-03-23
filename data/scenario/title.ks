@@ -78,7 +78,7 @@
     [FreeModal]
     ; 周回要素のあるフラグを除いて初期化（開発・検証時は適宜フラグ変更を行う可能性があるため）
     [if exp="sf.bootMode == 'normal' "]
-        [call storage="Utility/resetFlag.ks"]
+        [call storage="Utility/resetflag.ks"]
         [showsave]
     [endif]
     *NoButton
