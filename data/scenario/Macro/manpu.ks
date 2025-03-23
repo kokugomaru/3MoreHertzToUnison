@@ -5,7 +5,7 @@
 [macro name="DispSaturatedLine_Left"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
         [playse storage="manpu/saturatedLine.m4a" loop="false"]
-        [image storage="../image/manpu/saturatedLine.png" layer="3" x="%x|110" y="-30" name="saturatedLine" time="10" wait="true"]
+        [image storage="../image/manpu/saturatedline.png" layer="3" x="%x|110" y="-30" name="saturatedLine" time="10" wait="true"]
     [endif]
 [endmacro]
 
@@ -13,7 +13,7 @@
 [macro name="DispSaturatedLine_Center"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
         [playse storage="manpu/saturatedLine.m4a" loop="false"]  
-        [image storage="../image/manpu/saturatedLine.png" layer="3" x="%x|550" y="-30" name="saturatedLine" time="10" wait="true"]
+        [image storage="../image/manpu/saturatedline.png" layer="3" x="%x|550" y="-30" name="saturatedLine" time="10" wait="true"]
     [endif]
 [endmacro]
 
@@ -21,7 +21,7 @@
 [macro name="DispSaturatedLine_Right"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
         [playse storage="manpu/saturatedLine.m4a" loop="false"]
-        [image storage="../image/manpu/saturatedLine.png" layer="3" x="%x|960" y="-30" name="saturatedLine" time="10" wait="true"]
+        [image storage="../image/manpu/saturatedline.png" layer="3" x="%x|960" y="-30" name="saturatedLine" time="10" wait="true"]
     [endif]
 [endmacro]
 
