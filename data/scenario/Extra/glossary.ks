@@ -380,7 +380,7 @@
             [iscript]
                 tf.isCharacter = 0
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_09_click.png" y="300" enterimg="glossary/glossary_select_09_hover.png" exp="tf.selectedDescription = 9" descriptionNo="9" storage="../image/episode3/youkan.png" furigana="" name="ようかん" x="1410" age="" bloodtype="" birthday="" stature="" birthplace="" hobby="" specialskill="" motif="" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_09_click.png" y="300" enterimg="glossary/glossary_select_09_hover.png" exp="tf.selectedDescription = 9" descriptionNo="9" storage="../image/episode3/youkan_high.png" furigana="" name="ようかん" x="1410" age="" bloodtype="" birthday="" stature="" birthplace="" hobby="" specialskill="" motif="" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_09"]
             [deleteDetailDescription]
