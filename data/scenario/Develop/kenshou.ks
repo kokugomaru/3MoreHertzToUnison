@@ -39,6 +39,8 @@
 ; ------------------------------------------------------------
 [ptext layer="fix" text="[システム関連]" x="770" y="80" size="20" color="&sf.colorScheme[0]" bold="bold" edge="white"]
 [glink color="bth06" target="*DeleteSaveData" text="セーブデータ全削除" x="720" y="130" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
+[glink color="bth06" target="*CgAllOpen" text="CG全開放" x="720" y="230" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
+[glink color="bth06" target="*GlossaryAllOpen" text="用語全開放" x="720" y="315" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
 [s]
 
 *SelectTrueEnd
@@ -83,6 +85,27 @@
 
 *DeleteSaveData
 [call storage="Utility/deletesavedata.ks" ]
+[jump target="*Kenshou"]
+
+*CgAllOpen
+[cg storage="opening/dressingroom.png"]
+[cg storage="episode1/stageroom.png"]
+[cg storage="episode2/studioroom.png"]
+[cg storage="episode3/bedroom.png"]
+[jump target="*Kenshou"]
+
+*GlossaryAllOpen
+[iscript]
+    f.isOpenDesc_01 = 'true'
+    f.isOpenDesc_02 = 'true'
+    f.isOpenDesc_03 = 'true'
+    f.isOpenDesc_04 = 'true'
+    f.isOpenDesc_05 = 'true'
+    f.isOpenDesc_06 = 'true'
+    f.isOpenDesc_07 = 'true'
+    f.isOpenDesc_08 = 'true'
+    f.isOpenDesc_09 = 'true'
+[endscript]
 [jump target="*Kenshou"]
 
 *Backtitle
