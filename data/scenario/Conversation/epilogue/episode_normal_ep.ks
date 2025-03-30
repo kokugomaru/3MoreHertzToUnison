@@ -71,8 +71,10 @@ _　脱出成功だよ！！」[p]
 事務所へ行ってみましょう。[p]
 
 [HideMiyuki]
-; 場面転換
-; 背景画像は事務所のロビーのイメージ（フリー素材、余裕があれば作成）
+; 深雪の自室を追加したら削除予定
+[Freelayer1]
+[ChangeBackGround storage="epilogue/office.png"]
+[cg storage="epilogue/office.png"]
 [DeleteDispLocation]
 [DispLocation text="事務所のロビー"]
 [iscript]
@@ -220,8 +222,8 @@ _　脱出成功だよ！！」[p]
 #桜良
 はい！今日もよろしくお願いします！[p]
 
-; 場面転換
-; 事務所の廊下のような背景（フリー素材）
+[ChangeBackGround storage="epilogue/officehallway.png"]
+[cg storage="epilogue/officehallway.png"]
 [DeleteDispLocation]
 [DispLocation text="事務所の廊下"]
 [iscript]
