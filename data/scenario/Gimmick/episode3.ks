@@ -164,6 +164,7 @@
     [endif]
     [messageTrue]
     [call storage="Conversation/episode3/episode3_ed.ks"]
+    [cg storage="episode3/bedroom.png"]
     [autostop]
     [cancelskip]
 [endif]

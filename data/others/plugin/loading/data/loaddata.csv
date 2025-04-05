@@ -1,10 +1,11 @@
 bgimage\epilogue,black.png
+bgimage\epilogue,office.png
+bgimage\epilogue,officehallway.png
 bgimage\episode1,cablebundle.png
 bgimage\episode1,connectedwiring.png
 bgimage\episode1,controlpanel.png
 bgimage\episode1,dial.png
 bgimage\episode1,disconnectedwiring.png
-bgimage\episode1,omoide1_introduction.jpg
 bgimage\episode1,spotlight.png
 bgimage\episode1,stageroom.png
 bgimage\episode1,stageroom_stagerise.png
@@ -29,6 +30,7 @@ bgimage\episode3,poster_night.png
 bgimage\extra,credit.png
 bgimage\extra,extra.png
 bgimage\extra,glossary.png
+bgimage\opening,dressingroom.png
 bgimage\share,debug.png
 bgimage\share,itemmenu.png
 bgimage\share,title.png

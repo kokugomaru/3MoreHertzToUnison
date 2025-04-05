@@ -9,7 +9,7 @@
 
 ; シナリオ_オープニング
 [if exp="f.scn_skip == 0 && sf.scn_episodeOP_Skip == 'false' "]
-    [blackout exp="f.scn_skip == 0" storage_1="episode1/omoide1_introduction.jpg" storage_2="share/top.png"]
+    [blackout exp="f.scn_skip == 0" storage_1="opening/dressingroom.png" storage_2="share/top.png"]
     [ControlButtons]
     [FadeoutBGM]
     [if exp="f.isPlayingBGM == 'false' "]
@@ -17,6 +17,7 @@
     [endif]
     [messageTrue]
     [call storage="Conversation/episode_op.ks"]
+    [cg storage="opening/dressingroom.png"]
     [messageFalse]
     [autostop]
     [cancelskip]
@@ -193,6 +194,7 @@
     [endif]
     [messageTrue]
     [call storage="Conversation/episode1/episode1_ed.ks"]
+    [cg storage="episode1/stageroom.png"]
     [autostop]
     [cancelskip]
 [endif]

@@ -122,6 +122,7 @@
         [endif]
         [messageTrue]
         [call storage="Conversation/episode2/episode2_ed.ks"]
+        [cg storage="episode2/studioroom.png"]
         [autostop]
         [cancelskip]
     [endif]
