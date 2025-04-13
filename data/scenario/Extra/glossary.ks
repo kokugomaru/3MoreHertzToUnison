@@ -146,7 +146,7 @@
             [iscript]
                 tf.isCharacter = 0
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_01_click.png" y="300" enterimg="glossary/glossary_select_01_hover.png" exp="tf.selectedDescription = 1" descriptionNo="1" storage="" furigana="" x="1410" name="AQUARIUM" age="" bloodtype="" birthday="" stature="" birthplace="" hobby="" specialskill="" motif="" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_01_click.png" y="300" enterimg="glossary/glossary_select_01_hover.png" exp="tf.selectedDescription = 1" descriptionNo="1" storage="../image/logo/idollogo.png" furigana="" x="1410" width="350" height="194" name="Aquarium" age="" bloodtype="" birthday="" stature="" birthplace="" hobby="" specialskill="" motif="" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_01"]
             [deleteDetailDescription]
