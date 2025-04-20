@@ -5,8 +5,8 @@
 ; 標準ライブラリ群
 [call storage="Utility/tyrano.ks"]
 ; カスタマイズ部分を読み込み
-[loadcss file="data/others/customize/tyranoCustom.css"]
-[loadjs storage="customize/tyranoCustom.js"]
+[loadcss file="data/others/customize/tyranocustom.css"]
+[loadjs storage="customize/tyranocustom.js"]
 
 ; プラグインの呼び出し
 [plugin name="a_s_ico"]
