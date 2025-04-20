@@ -8,7 +8,7 @@
 [endscript]
 
 *Kenshou
-[ChangeBackGround storage="share/top.png"]
+[ChangeBackGround storage="share/background_02.png"]
 [button graphic="../others/plugin/theme_kopanda_bth_06_blue/image/config/back.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/config/back2.png" target="*Backtitle" x="1680" y="60" clickse="../sound/se/cancel.m4a"]
 
 ; ------------------------------------------------------------

@@ -59,7 +59,7 @@
 ; thumb にはサムネイルとして表示する画像のファイル名（記述がなければgraphicのファイルを指定）
 
 ; 一段目
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="share/top.png" thumb="share/top.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 [cg_image_button graphic="opening/dressingroom.png" thumb="opening/dressingroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 [cg_image_button graphic="episode1/stageroom.png" thumb="episode1/stageroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
