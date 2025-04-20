@@ -31,9 +31,9 @@ bgimage\extra,credit.png
 bgimage\extra,extra.png
 bgimage\extra,glossary.png
 bgimage\opening,dressingroom.png
+bgimage\share,background_02.png
 bgimage\share,debug.png
 bgimage\share,itemmenu.png
-bgimage\share,title.png
 bgimage\share,top.png
 fgimage\chara\akari,normal.png
 fgimage\chara\honami,normal.png
@@ -221,6 +221,8 @@ image\title,button_loadgame.png
 image\title,button_loadgame_hover.png
 image\title,button_newgame.png
 image\title,button_newgame_hover.png
+image\top,click_pc.png
+image\top,tap_sp.png
 others\plugin\loading\image,sample_bar.png
 others\plugin\loading\image,sample_frame.png
 others\plugin\loading\image,sample_image.png
