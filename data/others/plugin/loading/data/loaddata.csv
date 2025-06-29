@@ -121,6 +121,12 @@ image\episode3,wallhanger_onjacket.png
 image\episode3,wallhanger_onjacket_night.png
 image\episode3,youkan.png
 image\episode3,youkan_high.png
+image\favicon,android_192x192.png
+image\favicon,android_512x512.png
+image\favicon,apple-touch-icon.png
+image\favicon,favicon.ico
+image\favicon,favicon.svg
+image\favicon,favicon_48x48.png
 image\glossary,button_back_hover_next.png
 image\glossary,button_back_hover_prev.png
 image\glossary,button_back_next.png
@@ -184,6 +190,7 @@ image\glossary,lock.png
 image\glossary,log_panel.png
 image\logo,circlelogo.png
 image\logo,idollogo.png
+image\logo,titlelogo.png
 image\manpu,angry.png
 image\manpu,clamorously.png
 image\manpu,fuzzy.png

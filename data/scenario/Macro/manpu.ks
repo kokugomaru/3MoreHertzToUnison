@@ -4,7 +4,7 @@
 ; 画面左側のキャラクターに集中線を表示
 [macro name="DispSaturatedLine_Left"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
-        [playse storage="manpu/saturatedLine.m4a" loop="false"]
+        [playse storage="manpu/saturatedline.m4a" loop="false"]
         [image storage="../image/manpu/saturatedline.png" layer="3" x="%x|110" y="-30" name="saturatedLine" time="10" wait="true"]
     [endif]
 [endmacro]
@@ -12,7 +12,7 @@
 ; 画面中央のキャラクターに集中線を表示
 [macro name="DispSaturatedLine_Center"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
-        [playse storage="manpu/saturatedLine.m4a" loop="false"]  
+        [playse storage="manpu/saturatedline.m4a" loop="false"]  
         [image storage="../image/manpu/saturatedline.png" layer="3" x="%x|550" y="-30" name="saturatedLine" time="10" wait="true"]
     [endif]
 [endmacro]
@@ -20,7 +20,7 @@
 ; 画面右側のキャラクターに集中線を表示
 [macro name="DispSaturatedLine_Right"]
     [if exp="TYRANO.kag.stat.is_skip == false"]
-        [playse storage="manpu/saturatedLine.m4a" loop="false"]
+        [playse storage="manpu/saturatedline.m4a" loop="false"]
         [image storage="../image/manpu/saturatedline.png" layer="3" x="%x|960" y="-30" name="saturatedLine" time="10" wait="true"]
     [endif]
 [endmacro]

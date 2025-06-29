@@ -123,11 +123,12 @@
 
 ; 開発/検証用
 [if exp="sf.bootMode == 'develop' || sf.bootMode == 'kenshou' "]
-	[glink color="bth06" target="*kenshou" text="検証" x="1320" y="80" width="150" height="30" size="24" bold="true" clickse="../sound/se/decision.m4a"]
+	[glink color="bth06" target="*kenshou" text="検証" x="1020" y="80" width="150" height="30" size="24" bold="true" clickse="../sound/se/decision.m4a"]
 	[if exp="sf.bootMode == 'develop' "]
-		[glink color="bth06" target="*debug" text="デバッグ" x="1020" y="80" width="150" height="30" size="24" bold="true" clickse="../sound/se/decision.m4a"]
+		[glink color="bth06" target="*debug" text="デバッグ" x="720" y="80" width="150" height="30" size="24" bold="true" clickse="../sound/se/decision.m4a"]
 	[endif]
 [endif]
+[glink color="bth06" target="*DeleteSaveData" text="セーブデータ削除" x="1320" y="80" width="200" height="30" size="24" bold="true" clickse="../sound/se/decision.m4a"]
 ; 戻るボタン
 [button fix="true" graphic="&tf.img_path + 'back.png'" enterimg="&tf.img_path + 'back2.png'" target="*backtitle" x="1680" y="60" clickse="../sound/se/cancel.m4a"]
 [jump target="*config_page"]
@@ -153,6 +154,17 @@
 	$("#bgmovie").remove();
 [endscript]
 [jump storage="Develop/kenshou.ks" cond="sf.bootMode == 'develop' || sf.bootMode == 'kenshou' "]
+
+*DeleteSaveData
+[clearfix]
+[DispModal text="全てのセーブデータを削除します。<br>よろしいですか？" y="440" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" target_yes="*DeleteSaveData_Yes" target_no="*DeleteSaveData_No"]
+*DeleteSaveData_Yes
+[FreeModal]
+[call storage="Utility/deletesavedata.ks"]
+[jump storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks"]
+*DeleteSaveData_No
+[FreeModal]
+[jump storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks"]
 
 *config_page
 [clearstack]
