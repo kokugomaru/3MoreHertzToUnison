@@ -5,6 +5,7 @@
 [clearstack]
 [layer1True]
 [ChangeBackGround storage="share/top.png"]
+[image storage="../image/logo/titlelogo.png" layer="1" x="890" y="-50" width="800" height="640" name="titlelogo" time="10" wait="true"]
 [if exp="sf.usingDevice == 'PC' "]
     [image storage="../image/top/click_pc.png" layer="1" x="500" y="930" name="click_pc" time="10" wait="true"]
 [else]
@@ -54,6 +55,7 @@
 [clearfix]
 [Freelayer1]
 [ChangeBackGround storage="share/top.png"]
+[image storage="../image/logo/titlelogo.png" layer="1" x="890" y="-50" width="800" height="640" name="titlelogo" time="10" wait="true"]
 [cg storage="share/top.png"]
 [button x="590" y="800" width="540" height="86" graphic="title/button_newgame.png" enterimg="title/button_newgame_hover.png" target="*GameStart" clickse="../sound/se/decision.m4a"]
 [button x="1190" y="800" width="540" height="86" graphic="title/button_loadgame.png" enterimg="title/button_loadgame_hover.png" role="load" clickse="../sound/se/decision.m4a"]
@@ -72,6 +74,7 @@
 ;　ゲーム開始
 ; ------------------------------------------------------------
 *GameStart
+[Freelayer1]
 [if exp="f.isFirstGameClear == 'true' && sf.bootMode == 'normal' "]
     [cm]
     [clearfix]
