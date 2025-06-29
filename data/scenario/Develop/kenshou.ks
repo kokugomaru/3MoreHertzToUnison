@@ -90,6 +90,7 @@
 *CgAllOpen
 [cg storage="opening/dressingroom.png"]
 [cg storage="episode1/stageroom.png"]
+[cg storage="episode1/miyukisolostage.png"]
 [cg storage="episode2/studioroom.png"]
 [cg storage="episode3/bedroom.png"]
 [jump target="*Kenshou"]

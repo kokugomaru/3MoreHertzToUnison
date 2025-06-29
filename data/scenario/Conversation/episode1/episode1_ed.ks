@@ -109,58 +109,52 @@ _　もう一生思い出したくもないわね...）[p]
 「私がなんとかします！」って言ったと思ったら、[rhr]
 突然ステージに飛び出して行っちゃって！[p]
 
+[layer1False]
 [messageFalse]
 [HideAll]
-; 画面演出：スチル表示
+[ChangeBackGround storage="episode1/miyukisolostage.png" time="500"]
+[cg storage="episode1/miyukisolostage.png"]
 [wait time="2000"]
 [messageTrue]
-[ShowMiyuki_Left face="seriously"]
-[DispSparkle_Right]
-[ShowSakura_Right face="smile"]
 #桜良
 たった一人で音楽もない中歌い始めて、[rhr]
 すっごくカッコよかったんだよ！！[p]
 
-[FreeDispSparkle]
-[ChangeCharaFace name="miyuki" face="trouble"]
 #深雪
 あ、あれはただ、場をつなぐために必要だったから。[p]
 
-[ChangeCharaFace name="sakura" face="close_mouth"]
 #桜良
 今だったら私もそうしたかもしれないけど、[rhr]
 でもあの時誰よりも勇気があったのは深雪ちゃんだったよ。[p]
 
-[ChangeCharaFace name="sakura" face="smile"]
 #桜良
 深雪ちゃんの後ろ姿がすごく大きくて、[rhr]
 輝いてるみたいだったんだ。[p]
 
-[DispSweat_Left]
-[ChangeCharaFace name="miyuki" face="blush"]
 #深雪
 （え、何かしらこれは。[rhr]
 _　私、褒められてるの？桜良本人から？なんで？）[p]
 
-[FreeDispSweat]
 #深雪
 （私、一生分の運を今日使ってるのかしら？？？）[p]
 
-[ChangeCharaFace name="sakura" face="close_eye"]
 #桜良
 深雪ちゃんのあの姿が見られたのはよかったなって、[rhr]
 不謹慎かもしれないけど思っちゃった。[p]
 
-[ChangeCharaFace name="sakura" face="close_mouth"]
 #桜良
 だから、私の中だと悪いばっかりじゃないんだ。[p]
 
 #桜良
 深雪ちゃんからしたら、思い出したくないかもだけど...[p]
 
-; 画面演出解除：スチル表示
+[messageFalse]
+[layer1True]
+[ChangeBackGround storage="episode1/spotlight.png"]
 [DispSparkle_Left]
-[ChangeCharaFace name="miyuki" face="seriously"]
+[ShowMiyuki_Left face="seriously"]
+[ShowSakura_Right face="close_mouth"]
+[messageTrue]
 #深雪
 いえ、たった今人生で二番目くらいに[rhr]
 いい思い出にランクアップしたから、心配しないで。[p]
