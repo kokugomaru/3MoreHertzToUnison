@@ -302,7 +302,7 @@
     [nolog]
     [ShowMiyuki_Center face="seriously"]
     #深雪
-    よろしくおねがいします。[p]
+    よろしくおねがいします。[lp]
 
     [iscript]
         f.charaPosition[0] = 'miyuki'
