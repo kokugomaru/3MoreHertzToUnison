@@ -10,7 +10,7 @@
 [ShowSakura_Right face="trouble"]
 [ShowMiyuki_Left face="trouble"]
 #桜良
-ええっと...無事クリアできた、みたい？[p]
+ええっと...無事クリアできた、みたい？[lp]
 
 [ChangeCharaFace name="miyuki" face="normal"]
 #深雪

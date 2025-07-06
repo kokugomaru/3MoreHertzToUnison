@@ -16,6 +16,12 @@
     [endscript]
 [endmacro]
 
+; クリック待ち（バックログに表示する会話の最初のみ）
+[macro name="lp"]
+    [l]
+    [p]
+[endmacro]
+
 ; 背景を変更する
 [macro name="ChangeBackGround"]
     [bg storage="%storage" time="%time|100" wait="true" method="%method"]

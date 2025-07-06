@@ -11,7 +11,7 @@
 [endscript]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
-きゃっ、いきなり暗くなった！[p]
+きゃっ、いきなり暗くなった！[lp]
 
 [ChangeCharaFace name="miyuki" face="seriously"]
 #深雪

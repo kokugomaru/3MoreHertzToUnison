@@ -9,7 +9,7 @@
 [endscript]
 [ShowMiyuki_Center face="trouble"]
 #深雪
-ううん...いったい何が...[p]
+ううん...いったい何が...[lp]
 
 [DispQS_Center x="1030"]
 [ChangeCharaFace name="miyuki" face="surprise"]

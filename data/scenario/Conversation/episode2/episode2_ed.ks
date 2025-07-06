@@ -7,7 +7,7 @@
 [ShowMiyuki_Center face="seriously"]
 #深雪
 （触ったことのないカメラだけど、[rhr]
-_　なんとか使えそう）[p]
+_　なんとか使えそう）[lp]
 
 [iscript]
     f.charaPosition[0] = 'miyuki'
