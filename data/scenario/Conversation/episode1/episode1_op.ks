@@ -10,7 +10,7 @@
 [ShowMiyuki_Center face="trouble"]
 #深雪
 んん...あれ？[rhr]
-私、寝てた...？[p]
+私、寝てた...？[lp]
 
 #深雪
 確か雑誌の撮影が終わって帰る途中だったはず...[p]
@@ -117,7 +117,8 @@ _　きゅんきゅんしちゃうじゃない！）[p]
 #深雪
 見せて。[p]
 
-;[ItemDisp storage=""]
+[PlayGosoGoso]
+[ItemDisp storage="../image/episode1/card.png"]
 #深雪
 『仲良く謎解きしないと出られない部屋』？[p]
 
@@ -142,8 +143,7 @@ _　しっかりしてるなあ。[p]
 あっ！[p]
 
 [FreeDispSurprised]
-;[FreeItemDisp]
-; 桜良漫符：びっくり
+[FreeItemDisp]
 [DispSurprised_Right]
 [ChangeCharaFace name="sakura" face="surprise"]
 #桜良
