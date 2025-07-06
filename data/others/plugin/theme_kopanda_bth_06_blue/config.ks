@@ -157,10 +157,18 @@
 
 *DeleteSaveData
 [clearfix]
+[clearstack]
+[iscript]
+	$(".layer_camera").empty();
+	$("#bgmovie").remove();
+[endscript]
 [DispModal text="全てのセーブデータを削除します。<br>よろしいですか？" y="440" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" target_yes="*DeleteSaveData_Yes" target_no="*DeleteSaveData_No"]
 *DeleteSaveData_Yes
-[FreeModal]
 [call storage="Utility/deletesavedata.ks"]
+[iscript]
+	alert("セーブデータを削除しました");
+[endscript]
+[FreeModal]
 [jump storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks"]
 *DeleteSaveData_No
 [FreeModal]
