@@ -96,7 +96,13 @@ _　二人同じ画角に入っていればそれでいいかと...）[p]
 やってみようと思ったのは、[rhr]
 桜良、あなたのおかげよ。[p]
 
-; 画面演出：スチル表示：事務所で初めて顔合わせしたときのシーン
+[layer1False]
+[messageFalse]
+[HideAll]
+[ChangeBackGround storage="episode2/meetingofoffices.png" time="500"]
+[cg storage="episode2/meetingofoffices.png"]
+[wait time="2000"]
+[messageTrue]
 #深雪
 （事務所のアイドルプロジェクトに選ばれても、[rhr]
 _　当時は興味なんてなくて、絶対に断ろうと思ってた）[p]
@@ -127,7 +133,12 @@ _　メンバーに会うだけはしてほしいといわれて...）[p]
 てっきりあなたがセンターなのかと思ったら違って、[rhr]
 当時は理解できなかったわね。[p]
 
-; スチルから通常背景に変更
+[messageFalse]
+[layer1True]
+[ChangeBackGround storage="episode2/cameramonitor.png" time="500"]
+[ShowMiyuki_Left face="seriously"]
+[ShowSakura_Right face="surprise"]
+[messageTrue]
 #桜良
 そうだったんだ...[p]
 
