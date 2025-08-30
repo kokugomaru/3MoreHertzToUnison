@@ -51,8 +51,8 @@
 ; 通常のクリック判定
 ; 開発/検証モード：灰色｜通常モード：透明
 [macro name="clickJudgment"]
-    [clickable x="%x" y="%y" width="%width" height="%height" target="%target" opacity="30" mouseopacity="50" color="&sf.colorScheme[3]" cond="sf.bootMode == 'develop' || sf.bootMode == 'kenshou' "]
-    [clickable x="%x" y="%y" width="%width" height="%height" target="%target" opacity="0" mouseopacity="0" color="&sf.colorScheme[3]" cond="sf.bootMode == 'normal' "]
+    [clickable x="%x" y="%y" width="%width" height="%height" target="%target" opacity="90" mouseopacity="120" color="&sf.colorScheme[3]" cond="sf.bootMode == 'develop' || sf.bootMode == 'kenshou' "]
+    [clickable x="%x" y="%y" width="%width" height="%height" target="%target" opacity="%opacity|0" mouseopacity="%mouseopacity|0" color="&sf.colorScheme[3]" cond="sf.bootMode == 'normal' "]
 [endmacro]
 
 ; ローディングアニメーション開始（※index.htmlに同様の処理あり）
