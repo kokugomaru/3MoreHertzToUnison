@@ -270,4 +270,4 @@
     [endnolog]
     [HideAll]
 [endif]
-[jump storage="Gimmick/episode1.ks" target="*SelectItemOfLightCover"]
+[JumpStageRoom]
