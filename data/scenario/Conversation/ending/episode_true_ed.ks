@@ -31,6 +31,7 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 
 ; TrueEndルートシナリオ
 *TrueEndRoute
+[ChangeBackGround storage="ending/true/22.png" time="500"]
 #深雪
 さ、さくら！！[p]
 
@@ -43,11 +44,12 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 #桜良
 深雪ちゃんから、私に？[p]
 
-; スチル変更　桜良表情：口閉じ
+[ChangeBackGround storage="ending/true/23.png" time="500"]
 #桜良
 うん、聞かせて。[rhr]
 聞きたいな、深雪ちゃんの話。[p]
 
+[ChangeBackGround storage="ending/true/24.png" time="500"]
 #深雪
 ありがとう。[p]
 
@@ -64,11 +66,10 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 きっかけがなかったの。[rhr]
 あなたが楽しんでくれる会話が、わからなかった。[p]
 
-; スチル変更　桜良表情：驚き
+[ChangeBackGround storage="ending/true/25.png" time="500"]
 #桜良
 深雪ちゃん...[p]
 
-; スチル変更　深雪表情：赤面+笑顔
 #深雪
 でも、ためらうことなんてなかったのね。[rhr]
 だってあなたはこんなに優しくて、素敵な女の子なんだもの。[p]
@@ -89,7 +90,7 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 #深雪
 えっ？[p]
 
-; スチル変更　桜良表情：赤面＋笑顔
+[ChangeBackGround storage="ending/true/26.png" time="500"]
 #桜良
 だって、私とおんなじこと考えてたんだもん。[p]
 
@@ -101,7 +102,7 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 もっと仲良くなるにはどうしたらいいのかなって、[rhr]
 悩んでたのも同じ！[p]
 
-; スチル変更　深雪表情：赤面＋驚き
+[ChangeBackGround storage="ending/true/27.png" time="500"]
 #深雪
 そう、なの？[p]
 
@@ -116,7 +117,7 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 #桜良
 えへへ...[p]
 
-; スチル変更　深雪表情：赤面＋笑顔
+[ChangeBackGround storage="ending/true/28.png" time="500"]
 #深雪
 私たち、変なところだけ似ていたのね。[p]
 
@@ -131,13 +132,14 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 #桜良
 二人で一緒に！[p]
 
-; スチル変更　深雪表情：赤面
+[ChangeBackGround storage="ending/true/29.png" time="500"]
 #深雪
 っ！[p]
 
 #深雪
 うそ、夢みたい。[p]
 
+[ChangeBackGround storage="ending/true/30.png" time="500"]
 #桜良
 もう！夢なんかじゃないよー！[p]
 
@@ -145,7 +147,7 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 これからたっくさん話すのに、[rhr]
 夢で終わったら寂しいよ！[p]
 
-; スチル変更　深雪表情：赤面＋笑顔
+[ChangeBackGround storage="ending/true/31.png" time="500"]
 #深雪
 ふふ、そうね。[rhr]
 ありがとう、桜良。[p]
@@ -154,6 +156,8 @@ _　急に距離をつめてきたと思われてしまうかもしれない...�
 なら、このまま寝てしまうのももったいないし、[rhr]
 もう少しだけ話さない？[p]
 
+[ChangeBackGround storage="ending/true/32.png" time="500"]
+[cg storage="ending/true/32.png"]
 #桜良
 そのつもりでしかなかったよ！[rhr]
 ねえねえ深雪ちゃん、[p]

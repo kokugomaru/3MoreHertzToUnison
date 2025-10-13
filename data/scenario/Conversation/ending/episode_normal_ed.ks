@@ -1,4 +1,4 @@
-; スチル変更予定：ふたりとも羊羹をしまう　深雪表情：困りのまま
+[ChangeBackGround storage="ending/normal/07.png" time="500"]
 #深雪
 （でも、どうやって言えばいいの。[rhr]
 _　私なんてまだ少し話す程度のメンバーでしかないのに）[p]
@@ -7,16 +7,15 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 深雪ちゃんと食べたようかん、[rhr]
 とっても美味しかったな。[p]
 
-; スチル変更　桜良表情：目閉じ
 #桜良
 えっと...うん。[p]
 
-; スチル変更　桜良表情：口閉じ
+[ChangeBackGround storage="ending/normal/08.png" time="500"]
 #桜良
 深雪ちゃん、あのね。[rhr]
 聞いてくれる？[p]
 
-; スチル変更　深雪表情：真剣
+[ChangeBackGround storage="ending/normal/09.png" time="500"]
 #深雪
 も、もちろんよ。[p]
 
@@ -27,11 +26,11 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 #桜良
 深雪ちゃんと登れるから、楽しみだったんだよ。[p]
 
-; スチル変更　深雪表情：驚き
+[ChangeBackGround storage="ending/normal/10.png" time="500"]
 #深雪
 えっ...[p]
 
-; スチル変更　桜良表情：赤面
+[ChangeBackGround storage="ending/normal/11.png" time="500"]
 #桜良
 び、びっくりするよね！？[rhr]
 でも本当なんだ！[p]
@@ -44,24 +43,24 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 でもずっと話すきっかけがなくて、[rhr]
 どうしたら仲良くなれるかなって思ってた。[p]
 
-; スチル変更　桜良表情：笑顔
+[ChangeBackGround storage="ending/normal/12.png" time="500"]
 #桜良
 だからね、二人だけのロケって聞いて嬉しかった。[rhr]
 きっとたくさんお話しできるはずだ！って。[p]
 
-; スチル変更　桜良表情：困り
+[ChangeBackGround storage="ending/normal/13.png" time="500"]
 #桜良
 でもふたを開けてみたら、[rhr]
 大変すぎてそれどころじゃなかったんだけど。[p]
 
-; スチル変更　深雪表情：困り
+[ChangeBackGround storage="ending/normal/14.png" time="500"]
 #深雪
 そうね...雑談なんてする余裕、とてもなかったわ。[p]
 
 #桜良
 山小屋で女子トークしたかったのに！[p]
 
-; スチル変更　桜良表情：口閉じ
+[ChangeBackGround storage="ending/normal/15.png" time="500"]
 #桜良
 だ、だからね、[rhr]
 今改めてお泊り会できてうれしいんだ。[p]
@@ -72,12 +71,12 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 #桜良
 深雪ちゃんのこと、もっと知りたいな。[p]
 
-; スチル変更　桜良表情：赤面
+[ChangeBackGround storage="ending/normal/16.png" time="500"]
 #桜良
 深雪ちゃんと、[rhr]
 もっと仲良く、なりたい。[p]
 
-; スチル変更　深雪表情；赤面
+[ChangeBackGround storage="ending/normal/17.png" time="500"]
 #深雪
 っ......[p]
 
@@ -87,7 +86,7 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 #深雪
 思うわけ、ないわ。[p]
 
-; スチル変更　深雪表情：赤面と真剣を合わせた表情
+[ChangeBackGround storage="ending/normal/18.png" time="500"]
 #深雪
 私も、いえ、私のほうこそ、[rhr]
 ずっとずっとあなたに憧れて背中を追ってきたの。[p]
@@ -100,7 +99,7 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 桜良、私も同じ。[rhr]
 あなたともっと話してみたい。[p]
 
-; スチル変更　桜良表情：赤面と笑顔を合わせたような表情
+[ChangeBackGround storage="ending/normal/19.png" time="500"]
 #桜良
 わあ...！[p]
 
@@ -108,12 +107,12 @@ _　私なんてまだ少し話す程度のメンバーでしかないのに）[
 よかったあああ～！[rhr]
 なんて言われるかなって、すっごくドキドキした！[p]
 
-; スチル変更　桜良表情：笑顔
+[ChangeBackGround storage="ending/normal/20.png" time="500"]
 #桜良
 深雪ちゃん、なら早速コイバナしよ！[rhr]
 ねえねえ、深雪ちゃんの好きな人は？[p]
 
-; スチル変更　深雪表情：笑顔
+[ChangeBackGround storage="ending/normal/21.png" time="500"]
 #深雪
 その話題はNGってことで。[p]
 

@@ -92,7 +92,11 @@
 [cg storage="episode1/stageroom.png"]
 [cg storage="episode1/miyukisolostage.png"]
 [cg storage="episode2/studioroom.png"]
+[cg storage="episode2/meetingofoffices.png"]
 [cg storage="episode3/bedroom.png"]
+[cg storage="episode3/still/01.png"]
+[cg storage="ending/true/32.png"]
+[cg storage="epilogue/normal/lookbackmiyuki.png"]
 [jump target="*Kenshou"]
 
 *GlossaryAllOpen
