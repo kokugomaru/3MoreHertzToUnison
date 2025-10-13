@@ -73,7 +73,7 @@ _　脱出成功だよ！！」[p]
 [HideMiyuki]
 ; 深雪の自室を追加したら削除予定
 [Freelayer1]
-[ChangeBackGround storage="epilogue/office.png"]
+[ChangeBackGround storage="epilogue/normal/office.png"]
 [cg storage="epilogue/office.png"]
 [DeleteDispLocation]
 [DispLocation text="事務所のロビー"]
@@ -222,7 +222,7 @@ _　脱出成功だよ！！」[p]
 #桜良
 はい！今日もよろしくお願いします！[p]
 
-[ChangeBackGround storage="epilogue/officehallway.png"]
+[ChangeBackGround storage="epilogue/normal/officehallway.png"]
 [cg storage="epilogue/officehallway.png"]
 [DeleteDispLocation]
 [DispLocation text="事務所の廊下"]
@@ -365,8 +365,10 @@ _　桜良の笑顔が魅力的で目を合わせられない...）[p]
 #桜良
 私何かしちゃった！？[p]
 
-; 画面演出：スチル表示予定
 [HideSakura]
+[DeleteDispLocation]
+[ChangeBackGround storage="epilogue/normal/lookbackmiyuki.png" time="500"]
+[cg storage="epilogue/true/lookbackmiyuki.png"]
 #深雪
 違うわ。[p]
 

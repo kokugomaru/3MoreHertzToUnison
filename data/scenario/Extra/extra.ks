@@ -10,7 +10,7 @@
 *Extra
 [button graphic="../others/plugin/theme_kopanda_bth_06_blue/image/config/back.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/config/back2.png" target="*Backtitle" x="1680" y="60" clickse="../sound/se/cancel.m4a"]
 [glink color="bth06" storage="cg.ks" text="CG" x="700" y="200" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
-[glink color="bth06" storage="Extra/glossary.ks" target="" text="用語解説" x="1200" y="200" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
+[glink color="bth06" storage="Extra/glossary.ks" text="用語解説" x="1200" y="200" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*Contact" text="お問い合わせ" x="700" y="350" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*BugReport" text="不具合報告" x="1200" y="350" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*Infomation" text="お知らせ" x="700" y="500" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]

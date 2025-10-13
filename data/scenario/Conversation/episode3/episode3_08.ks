@@ -341,7 +341,7 @@
     f.itemVisible[1] = 'episode3_bed'
 [endscript]
 [HideAll]
-[blackout exp="f.isRoomLightNight == 1" storage_1="episode3/bedroom_night.png" storage_2="episode3/bedroom.png"]
+[blackout exp="f.isRoomLightNight == 1" storage_1="episode3/still/01.png" storage_2="episode3/bedroom.png"]
 [jump storage="Gimmick/episode3.ks" target="*TurnOffTheLightAndSleep"]
 
 *NotSleep

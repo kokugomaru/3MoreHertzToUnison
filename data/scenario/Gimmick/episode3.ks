@@ -173,8 +173,6 @@
     f.isEpisode3Clear = 1
     f.isOpenDesc_09 = 'true'
 [endscript]
-; スチル未完成のため基準背景を仮配置
-[ChangeBackGround storage="episode3/bedroom_night.png"]
 
 ; シナリオ_エンディング
 [if exp="f.scn_skip == 0 && sf.scn_episodeED_Skip == 'false' "]
@@ -254,6 +252,7 @@
 [FadeoutBGM]
 ; スチル未完成のため基準背景を仮配置
 [blackout exp="f.isRoomLightNight == 1" storage_1="episode3/bedroom_night.png" storage_2="episode3/bedroom.png"]
+[layer1True]
 
 ; シナリオ_エピローグ
 [if exp="f.scn_skip == 0 && sf.scn_episodeEP_Skip == 'false' "]

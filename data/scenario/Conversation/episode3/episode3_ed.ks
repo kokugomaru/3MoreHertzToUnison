@@ -1,4 +1,8 @@
-; スチル変更：桜良笑顔、深雪真剣
+[layer1False]
+[messageFalse]
+[HideAll]
+[cg storage="episode3/still/01.png"]
+[messageTrue]
 #桜良
 ふふっ、こうしてると修学旅行みたいだね！[p]
 
@@ -16,7 +20,7 @@
 芸能活動を始めたのが中学生の頃だから、[rhr]
 あまりおいそれとはできなかったの。[p]
 
-; スチル変更　桜良表情：口閉じに変更
+[ChangeBackGround storage="episode3/still/02.png" time="500"]
 #桜良
 ああ～それなら難しいかあ。[p]
 
@@ -34,7 +38,7 @@
 あいにくお菓子はないんだけど...って、[rhr]
 あれ？[p]
 
-; スチル変更：羊羹を取り出す　桜良・深雪表情：驚き
+[ChangeBackGround storage="episode3/still/03.png" time="500"]
 #桜良
 ここにようかんなんてあったっけ？[rhr]
 深雪ちゃん持ってたの？[p]
@@ -42,7 +46,7 @@
 #深雪
 いえ、今さっきまではなかったはずだけど...[p]
 
-; スチル変更　桜良表情：笑顔　深雪：真剣
+[ChangeBackGround storage="episode3/still/04.png" time="500"]
 #桜良
 でもラッキー！[rhr]
 お菓子とコイバナ！準備万端だよ！[p]
@@ -67,14 +71,14 @@
 （疲労からうっかり食べてしまって、[rhr]
 _　心底後悔したからよく覚えてるわ...）[p]
 
-; スチル変更：羊羹を開けて食べる　桜良表情：口閉じ
+[ChangeBackGround storage="episode3/still/05.png" time="500"]
 #深雪
 もぐ...うん、美味しい、けれど。[p]
 
 #桜良
 うーん、やっぱり頂上で食べた味にはかなわないよね。[p]
 
-; スチル変更　深雪表情：困り
+[ChangeBackGround storage="episode3/still/06.png" time="500"]
 #深雪
 （あなたにもらったもので、[rhr]
 _　あなたと一緒に食べたものだからこそ、[rhr]

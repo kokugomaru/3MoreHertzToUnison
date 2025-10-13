@@ -68,5 +68,5 @@
 [chara_face name="miyuki" face="trouble" storage="miyuki/trouble.png"]
 
 ; キャラクター操作設定
-[chara_config pos_mode="false" emory="true" talk_focus="brightness" brightness_value="70"]
+[chara_config pos_mode="false" memory="true" talk_focus="brightness" brightness_value="70"]
 [return]
