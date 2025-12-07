@@ -3,22 +3,38 @@
 ; ------------------------------------------------------------
 ; 桜良を画面右側に表示する
 [macro name="ShowSakura_Right"]
-    [chara_show name="sakura" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="960" top="%top|120"]
+    [if exp="f.isChangeDress == 'false' "]
+        [chara_show name="sakura" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="960" top="%top|120"]
+    [else]
+        [chara_show name="sakura" time="1000" layer="3" wait="true" face="%face|normal_idoldress" width="874" height="2107" left="844" top="%top|53"]
+    [endif]
 [endmacro]
 
 ; 桜良を画面中央に表示する
 [macro name="ShowSakura_Center"]
-    [chara_show name="sakura" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="550" top="%top|120"]
+    [if exp="f.isChangeDress == 'false' "]
+        [chara_show name="sakura" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="550" top="%top|120"]
+    [else]
+        [chara_show name="sakura" time="1000" layer="3" wait="true" face="%face|normal_idoldress" width="874" height="2107" left="431" top="%top|53"]
+    [endif]
 [endmacro]
 
 ; 深雪を画面左側に表示する
 [macro name="ShowMiyuki_Left"]
-    [chara_show name="miyuki" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="160" top="%top|120"]
+    [if exp="f.isChangeDress == 'false' "]
+        [chara_show name="miyuki" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="160" top="%top|120"]
+    [else]
+        [chara_show name="miyuki" time="1000" layer="3" wait="true" face="%face|normal_idoldress" width="880" height="1996" left="-32" top="%top|75"]
+    [endif]
 [endmacro]
 
 ; 深雪を画面中央に表示する
 [macro name="ShowMiyuki_Center"]
-    [chara_show name="miyuki" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="550" top="%top|120"]
+    [if exp="f.isChangeDress == 'false' "]
+        [chara_show name="miyuki" time="1000" layer="3" wait="true" face="%face|normal" width="737" height="1990" left="550" top="%top|120"]
+    [else]
+        [chara_show name="miyuki" time="1000" layer="3" wait="true" face="%face|normal_idoldress" width="880" height="1996" left="384" top="%top|75"]
+    [endif]
 [endmacro]
 
 ; キャラクターの表情を切り替える
@@ -31,11 +47,27 @@
 ; キャラクターの立ち位置を移動する
 [macro name="ChangeCharaPosition"]
     [if exp="f.charaPosition[1] == 'left' "]
-        [chara_move name="&f.charaPosition[0]" left="160" anim="true" time="10" wait="true"]
+        [if exp="f.isChangeDress == 'false' "]
+            [chara_move name="&f.charaPosition[0]" left="160" anim="true" time="10" wait="true"]
+        [else]
+            [chara_move name="&f.charaPosition[0]" left="-32" anim="true" time="10" wait="true"]
+        [endif]
     [elsif exp="f.charaPosition[1] == 'center' "]
-        [chara_move name="&f.charaPosition[0]" left="550" anim="true" time="10" wait="true"]
+        [if exp="f.isChangeDress == 'false' "]
+            [chara_move name="&f.charaPosition[0]" left="550" anim="true" time="10" wait="true"]
+        [else]
+            [if exp="f.charaPosition[0] = 'sakura' " ]
+                [chara_move name="&f.charaPosition[0]" left="431" anim="true" time="10" wait="true"]
+            [elsif exp="f.charaPosition[0] = 'miyuki' " ]
+                [chara_move name="&f.charaPosition[0]" left="384" anim="true" time="10" wait="true"]
+            [endif]
+        [endif]
     [elsif exp="f.charaPosition[1] == 'right' "]
-        [chara_move name="&f.charaPosition[0]" left="960" anim="true" time="10" wait="true"]
+        [if exp="f.isChangeDress == 'false' "]
+            [chara_move name="&f.charaPosition[0]" left="960" anim="true" time="10" wait="true"]
+        [else]
+            [chara_move name="&f.charaPosition[0]" left="844" anim="true" time="10" wait="true"]
+        [endif]
     [endif]
 [endmacro]
 

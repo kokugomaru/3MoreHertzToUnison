@@ -88,7 +88,7 @@
 [cg_image_button graphic="ending/true/32.png" thumb="ending/true/32.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
 ; 二段目
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="epilogue/normal/miyukiroom.png" thumb="epilogue/normal/miyukiroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 [cg_image_button graphic="epilogue/normal/lookbackmiyuki.png" thumb="epilogue/normal/lookbackmiyuki.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 [cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 

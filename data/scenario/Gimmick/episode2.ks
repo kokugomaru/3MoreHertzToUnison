@@ -129,6 +129,7 @@
     [iscript]
         f.isEpisode2Clear = 1
         f.isOpenDesc_08 = 'true'
+        f.isChangeDress = 'false'
     [endscript]
     [layer1True]
     [SavePoint]
@@ -803,7 +804,6 @@
     [iscript]
         f.isCurtainGet = -1
         f.isDressGet = -1
-        f.isChangeDress = 'true'
     [endscript]
 [endif]
 [JumpStudioRoom]

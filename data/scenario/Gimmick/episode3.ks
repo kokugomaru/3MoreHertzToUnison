@@ -250,9 +250,7 @@
     [cancelskip]
 [endif]
 [FadeoutBGM]
-; スチル未完成のため基準背景を仮配置
-[blackout exp="f.isRoomLightNight == 1" storage_1="episode3/bedroom_night.png" storage_2="episode3/bedroom.png"]
-[layer1True]
+[blackout exp="f.selectedEDRoute == 'True' " storage_1="episode3/bedroom_night.png" storage_2="epilogue/normal/miyukiroom.png"]
 
 ; シナリオ_エピローグ
 [if exp="f.scn_skip == 0 && sf.scn_episodeEP_Skip == 'false' "]
@@ -287,6 +285,7 @@
 ; エンドロール再生
 [if exp="sf.endrollSkip == 'false' "]
     [cancelskip]
+    [layer1True]
     [if exp="f.isFirstGameClear == 'true' "]
         [cm]
         [clearfix]
