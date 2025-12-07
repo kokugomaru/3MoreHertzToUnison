@@ -69,7 +69,6 @@
     （変なくぼみ...[r]
     _　何かをはめるのかしら？）[p]
 ; 衣装を身に着けており、天幕が下りていない時
-; ここの立ち絵は衣装を着ているものに変更
 [elsif exp="f.isTentDown == 0 && f.isDressGet == -1"]
     [ShowMiyuki_Center]
     #深雪
@@ -80,16 +79,16 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    [ShowSakura_Right face="surprise"]
+    [ShowSakura_Right face="surprise_idoldress"]
     #桜良
     このまま撮るのはダメなの？[p]
 
-    [ChangeCharaFace name="miyuki" face="seriously"]
+    [ChangeCharaFace name="miyuki" face="seriously_idoldress"]
     #深雪
     ダメよ。[r]
     良い撮影環境があるんだから妥協は許さない。[p]
 
-    [ChangeCharaFace name="sakura" face="close_mouth"]
+    [ChangeCharaFace name="sakura" face="close_mouth_idoldress"]
     #桜良
     おお～...[r]
     なんだかプロのカメラマンみたい。[p]
@@ -98,30 +97,30 @@
     アマチュアよ。[r]
     それに、これはただのこだわりだから。[p]
 
-    [ChangeCharaFace name="miyuki" face="precious"]
+    [ChangeCharaFace name="miyuki" face="precious_idoldress"]
     #深雪
     （せっかく撮るならちゃんと撮りたい、[r]
     _　っていう私のわがままなんだけれど）[p]
 
-    [ChangeCharaFace name="sakura" face="trouble"]
+    [ChangeCharaFace name="sakura" face="trouble_idoldress"]
     #桜良
     うーん、でも天幕をおろせる道具がなさそう。[r]
     椅子を持ってきても届かなそうだし。[p]
 
-    [ChangeCharaFace name="sakura" face="normal"]
+    [ChangeCharaFace name="sakura" face="normal_idoldress"]
     #桜良
     何か代わりになる道具をさがそっか！[p]
 
-    [ChangeCharaFace name="miyuki" face="trouble"]
+    [ChangeCharaFace name="miyuki" face="trouble_idoldress"]
     #深雪
     ごめんなさい、わがままを言って。[p]
 
-    [ChangeCharaFace name="sakura" face="smile"]
+    [ChangeCharaFace name="sakura" face="smile_idoldress"]
     #桜良
     こんなの全然わがままのうちじゃないよ！[r]
     さあて、一緒に探そう！[p]
 
-    [ChangeCharaFace name="miyuki" face="smile"]
+    [ChangeCharaFace name="miyuki" face="smile_idoldress"]
     #深雪
     ありがとう、桜良。[p]
 ; 天幕が下りており、衣装を身に着けた状態
@@ -129,7 +128,7 @@
     ; 初回セリフ表示
     [if exp="f.isClickedCamera_first == 'true' "]
         [DispMusicalNote_Center]
-        [ShowSakura_Center face="smile"]
+        [ShowSakura_Center face="smile_idoldress"]
         #桜良
         撮影準備、ばっちりだね！[p]
 
@@ -139,13 +138,13 @@
             f.charaPosition[1] = 'right'
         [endscript]
         [ChangeCharaPosition]
-        [ShowMiyuki_Left face="smile"]
+        [ShowMiyuki_Left face="smile_idoldress"]
         #深雪
         そうね。[r]
         この部屋にあるものはすべて活用したから、[r]
         これで条件は満たしているはず。[p]
 
-        [ChangeCharaFace name="sakura" face="close_mouth"]
+        [ChangeCharaFace name="sakura" face="close_mouth_idoldress"]
         #桜良
         ねえ深雪ちゃん、今すぐ写真を撮る？[r]
         それとも、もう少しこの部屋を見てみる？[p]
@@ -154,7 +153,7 @@
         [endscript]
     ; 二回目以降セリフ表示
     [else]
-        [ShowSakura_Center]
+        [ShowSakura_Center face="normal_idoldress" ]
         #桜良
         そろそろ写真を撮るの？[p]
     [endif]
@@ -181,7 +180,7 @@
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-[ShowSakura_Right face="smile"]
+[ShowSakura_Right face="smile_idoldress"]
 #桜良
 おっけー！[p]
 [endnolog]
@@ -202,7 +201,7 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    [ShowSakura_Right]
+    [ShowSakura_Right face="normal_idoldress"]
     #桜良
     わかった！[r]
     準備ができたら言ってね！[p]

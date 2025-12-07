@@ -290,25 +290,33 @@
     ; 衣装交換後の立ち絵は通常時のものではなく、
     ; 明転した際のセリフにそのまま続けられるよう指定の表情に設定
     ; このイベント後、立ち絵はアイドル衣装で固定（思い出2の間のみ）
+    [HideAll]
     [messageFalse]
+    [skipstop]
     [iscript]
         f.itemVisible[0] = 'true'
         f.itemVisible[1] = 'episode2_dress'
+        f.isChangeDress = 'true'
     [endscript]
     [PlayRustlingClothes]
     [blackout exp="f.isTentDown == 1" storage_1="episode2/studioroom_tentdown.png" storage_2="episode2/studioroom.png"]
     [messageTrue]
 
-    [ChangeCharaFace name="sakura" face="normal"]
+    [ShowSakura_Center face="normal_idoldress"]
     #桜良
     ふう、やっぱりちょっと大変だったね。[r]
     衣装さんって本当にすごいなあ。[p]
 
-    [ChangeCharaFace name="miyuki" face="trouble"]
+    [iscript]
+        f.charaPosition[0] = 'sakura'
+        f.charaPosition[1] = 'right'
+    [endscript]
+    [ChangeCharaPosition]
+    [ShowMiyuki_Left face="trouble_idoldress"]
     #深雪
     そうね...[p]
 
-    [ChangeCharaFace name="sakura" face="trouble"]
+    [ChangeCharaFace name="sakura" face="trouble_idoldress"]
     #桜良
     大丈夫？[r]
     確かにちょっと疲れたけど...[p]
@@ -317,12 +325,12 @@
     大丈夫よ。[r]
     寧ろエネルギー満タン。[p]
 
-    [ChangeCharaFace name="sakura" face="amazed"]
+    [ChangeCharaFace name="sakura" face="amazed_idoldress"]
     #桜良
     えねるぎーまんたん？[p]
 
     [DispSparkle_Left]
-    [ChangeCharaFace name="miyuki" face="precious"]
+    [ChangeCharaFace name="miyuki" face="precious_idoldress"]
     #深雪
     はあ、今日が命日でもいい...[p]
 
@@ -330,7 +338,7 @@
     #桜良
     本当にエネルギー満タンなのかなそれ！？[p]
 
-    [ChangeCharaFace name="miyuki" face="seriously"]
+    [ChangeCharaFace name="miyuki" face="seriously_idoldress"]
     #深雪
     当たり前でしょ。[r]
     ほら、部屋の探索に戻りましょ。[p]
@@ -344,7 +352,7 @@
         f.charaPosition[1] = 'center'
     [endscript]
     [ChangeCharaPosition]
-    [ChangeCharaFace name="miyuki" face="blush"]
+    [ChangeCharaFace name="miyuki" face="blush_idoldress"]
     #深雪
     （すこしだけ触れた桜良の手、あたたかかったな...）[p]
 [endif]

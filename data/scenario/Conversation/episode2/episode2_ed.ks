@@ -4,7 +4,7 @@
         `✔️` + `&emsp;` + `写真を撮る`;
     TG.ftag.startTag("pushlog", {text:html,} );
 [endscript]
-[ShowMiyuki_Center face="seriously"]
+[ShowMiyuki_Center face="seriously_idoldress"]
 #深雪
 （触ったことのないカメラだけど、[rhr]
 _　なんとか使えそう）[lp]
@@ -14,7 +14,7 @@ _　なんとか使えそう）[lp]
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-[ShowSakura_Right face="close_mouth"]
+[ShowSakura_Right face="close_mouth_idoldress"]
 #桜良
 そういえばカメラを動かすのは大丈夫なんだね？[p]
 
@@ -26,16 +26,16 @@ _　なんとか使えそう）[lp]
 カメラで必要な組み立ては三脚くらいで、[rhr]
 それは趣味で撮る分なら必須じゃないから[p]
 
-[ChangeCharaFace name="sakura" face="close_eye"]
+[ChangeCharaFace name="sakura" face="close_eye_idoldress"]
 #桜良
 そっか、なるほどなあ...[p]
 
-[ChangeCharaFace name="sakura" face="close_mouth"]
+[ChangeCharaFace name="sakura" face="close_mouth_idoldress"]
 #桜良
 ねね、深雪ちゃん。[rhr]
 どんなポーズで写真撮る？[p]
 
-[ChangeCharaFace name="miyuki" face="impatience"]
+[ChangeCharaFace name="miyuki" face="impatience_idoldress"]
 #深雪
 ポー、ズ...？[p]
 
@@ -51,12 +51,12 @@ _　二人同じ画角に入っていればそれでいいかと...）[p]
 それならポーズもこだわりたいなーって。[p]
 
 [DispMusicalNote_Right]
-[ChangeCharaFace name="sakura" face="smile"]
+[ChangeCharaFace name="sakura" face="smile_idoldress"]
 #桜良
 深雪ちゃんはどうしたい？[p]
 
 [FreeDispMusicalNote]
-[ChangeCharaFace name="miyuki" face="blush"]
+[ChangeCharaFace name="miyuki" face="blush_idoldress"]
 #深雪
 ひゃっ！[rhr]
 わ、私！？[p]
@@ -64,19 +64,19 @@ _　二人同じ画角に入っていればそれでいいかと...）[p]
 #深雪
 （よく考えなくても桜良とのツーショットよね！？）[p]
 
-[ChangeCharaFace name="miyuki" face="precious"]
+[ChangeCharaFace name="miyuki" face="precious_idoldress"]
 #深雪
 二人で映れるならもうそれだけで幸せよ...！[p]
 
-[ChangeCharaFace name="sakura" face="blush"]
+[ChangeCharaFace name="sakura" face="blush_idoldress"]
 #桜良
 一緒に撮るだけでそんなに！？[p]
 
-[ChangeCharaFace name="miyuki" face="impatience"]
+[ChangeCharaFace name="miyuki" face="impatience_idoldress"]
 #深雪
 （しまった、本心がつい口から...）[p]
 
-[ChangeCharaFace name="miyuki" face="seriously"]
+[ChangeCharaFace name="miyuki" face="seriously_idoldress"]
 #深雪
 ごめんなさい、私はどんなポーズでも構わないわ。[p]
 
@@ -84,7 +84,7 @@ _　二人同じ画角に入っていればそれでいいかと...）[p]
 尊敬しているあなたと二人で写真を撮れるだなんて、[rhr]
 それだけでうれしいってことよ。[p]
 
-[ChangeCharaFace name="sakura" face="surprise"]
+[ChangeCharaFace name="sakura" face="surprise_idoldress"]
 #桜良
 えっ...？[p]
 
@@ -136,28 +136,28 @@ _　メンバーに会うだけはしてほしいといわれて...）[p]
 [messageFalse]
 [layer1True]
 [ChangeBackGround storage="episode2/cameramonitor.png" time="500"]
-[ShowMiyuki_Left face="seriously"]
-[ShowSakura_Right face="surprise"]
+[ShowMiyuki_Left face="seriously_idoldress"]
+[ShowSakura_Right face="surprise_idoldress"]
 [messageTrue]
 #桜良
 そうだったんだ...[p]
 
-[ChangeCharaFace name="miyuki" face="surprise"]
+[ChangeCharaFace name="miyuki" face="surprise_idoldress"]
 #深雪
 （正確にはあなたと仲良くなりたくて[rhr]
 _　アイドルやることを決めたんだけど）[p]
 
-[ChangeCharaFace name="miyuki" face="normal"]
+[ChangeCharaFace name="miyuki" face="normal_idoldress"]
 #深雪
 （でも、尊敬しているのは事実よ）[p]
 
 [DispSparkle_Right]
-[ChangeCharaFace name="sakura" face="smile"]
+[ChangeCharaFace name="sakura" face="smile_idoldress"]
 #桜良
 えへへ...胸のあたりがくすぐったい。[p]
 
 [FreeDispSparkle]
-[ChangeCharaFace name="sakura" face="close_mouth"]
+[ChangeCharaFace name="sakura" face="close_mouth_idoldress"]
 #桜良
 私ね、最初は全然自信なかったんだ。[p]
 
@@ -165,12 +165,12 @@ _　アイドルやることを決めたんだけど）[p]
 みんなすっごくかわいくて美人で、[rhr]
 歌もダンスも上手で、足引っ張らないかなって。[p]
 
-[ChangeCharaFace name="sakura" face="smile"]
+[ChangeCharaFace name="sakura" face="smile_idoldress"]
 #桜良
 でも、深雪ちゃんがそう考えてくれてたって、[rhr]
 そう思ったらすごく...うれしいな。[p]
 
-[ChangeCharaFace name="miyuki" face="smile"]
+[ChangeCharaFace name="miyuki" face="smile_idoldress"]
 #深雪
 あなたは誰よりも魅力的なアイドルよ。[rhr]
 私が保証する。[p]
@@ -178,18 +178,18 @@ _　アイドルやることを決めたんだけど）[p]
 #桜良
 う、うん、ありがとう！[p]
 
-[ChangeCharaFace name="sakura" face="close_mouth"]
+[ChangeCharaFace name="sakura" face="close_mouth_idoldress"]
 #桜良
 ...私だって、深雪ちゃんのこと、[rhr]
 誰よりもすごいアイドルって思ってるよ。[p]
 
 [DispQS_Left]
-[ChangeCharaFace name="miyuki" face="blush"]
+[ChangeCharaFace name="miyuki" face="blush_idoldress"]
 #深雪
 桜良、い、今なんて？[p]
 
 [FreeDispQS]
-[ChangeCharaFace name="sakura" face="blush"]
+[ChangeCharaFace name="sakura" face="blush_idoldress"]
 #桜良
 え、えーい！！[p]
 

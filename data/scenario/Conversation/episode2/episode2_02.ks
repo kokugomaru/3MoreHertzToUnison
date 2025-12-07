@@ -146,7 +146,11 @@
         f.charaPosition[1] = 'left'
     [endscript]
     [ChangeCharaPosition]
-    [ShowSakura_Right face="surprise"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ShowSakura_Right face="surprise"]
+    [else]
+        [ShowSakura_Right face="surprise_idoldress"]
+    [endif]
     #桜良
     えっ、そんなものあったかな？[p]
 
@@ -155,17 +159,29 @@
     少し加工する必要はあるけれどね。[p]
 
     [DispSurprised_Right]
-    [ChangeCharaFace name="sakura" face="normal"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="sakura" face="normal"]
+    [else]
+        [ChangeCharaFace name="sakura" face="normal_idoldress"]
+    [endif]
     #桜良
     あっ、もしかして「あれ」？[p]
 
     [FreeDispSurprised]
-    [ChangeCharaFace name="miyuki" face="smile"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="miyuki" face="smile"]
+    [else]
+        [ChangeCharaFace name="miyuki" face="smile_idoldress"]
+    [endif]
     #深雪
     「あれ」よ。[p]
 ; ハンガー所持で二回目以降
 [elsif exp="f.isHangerGet == 1 && f.isClickedTent_first == 'false' "]
-    [ShowSakura_Center face="close_mouth"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ShowSakura_Center face="close_mouth"]
+    [else]
+        [ShowSakura_Center face="close_mouth_idoldress"]
+    [endif]
     #桜良
     深雪ちゃんの考えてることがわかったかも！[p]
 
@@ -179,36 +195,64 @@
     [endscript]
     [ChangeCharaPosition]
     [DispTrouble_Left]
-    [ShowMiyuki_Left face="amazed"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ShowMiyuki_Left face="amazed"]
+    [else]
+        [ShowMiyuki_Left face="amazed_idoldress"]
+    [endif]
     #深雪
     流石に針金を引きちぎったりはできないわよ。[p]
 
     [FreeDispTrouble]
-    [ChangeCharaFace name="miyuki" face="sigh"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="miyuki" face="sigh"]
+    [else]
+        [ChangeCharaFace name="miyuki" face="sigh_idoldress"]
+    [endif]
     #深雪
     細かい力加減ができないってだけ。[r]
     ...心外だけど。[p]
 
-    [ChangeCharaFace name="sakura" face="seriously"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="sakura" face="seriously"]
+    [else]
+        [ChangeCharaFace name="sakura" face="seriously_idoldress"]
+    [endif]
     #桜良
     もしかして、瓶の蓋とか開けるの得意だったり？[p]
 
-    [ChangeCharaFace name="miyuki" face="normal"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="miyuki" face="normal"]
+    [else]
+        [ChangeCharaFace name="miyuki" face="normal_idoldress"]
+    [endif]
     #深雪
     そういえば開けられなくて困ったことないわね。[p]
 
     [DispSparkle_Right]
-    [ChangeCharaFace name="sakura" face="surprise"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="sakura" face="surprise"]
+    [else]
+        [ChangeCharaFace name="sakura" face="surprise_idoldress"]
+    [endif]
     #桜良
     す、すごい。[r]
     私ときどき開けられなくて大変なのに！[p]
 
     [FreeDispSparkle]
-    [ChangeCharaFace name="sakura" face="smile"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="sakura" face="smile"]
+    [else]
+        [ChangeCharaFace name="sakura" face="smile_idoldress"]
+    [endif]
     #桜良
     今度蓋が開かなかった時は深雪ちゃんにお願いするね！[p]
 
-    [ChangeCharaFace name="miyuki" face="precious"]
+    [if exp="f.isChangeDress == 'false' "]
+        [ChangeCharaFace name="miyuki" face="precious"]
+    [else]
+        [ChangeCharaFace name="miyuki" face="precious_idoldress"]
+    [endif]
     #深雪
     ふ、蓋でも針金でもなんでも持ってきなさい！！[p]
 [endif]
@@ -223,7 +267,11 @@
 [endscript]
 [ChangeCharaPosition]
 [nolog]
-[ShowMiyuki_Center face="seriously"]
+[if exp="f.isChangeDress == 'false' "]
+    [ShowMiyuki_Center face="seriously"]
+[else]
+    [ShowMiyuki_Center face="seriously_idoldress"]
+[endif]
 #深雪
 これをこうして...[p]
 
@@ -237,7 +285,11 @@
 [wait time="500"]
 [messageTrue]
 [DispSparkle_Right]
-[ShowSakura_Right face="smile"]
+[if exp="f.isChangeDress == 'false' "]
+    [ShowSakura_Right face="smile"]
+[else]
+    [ShowSakura_Right face="smile_idoldress"]
+[endif]
 [ShowMiyuki_Left]
 #桜良
 やった！届いた！[p]
@@ -250,7 +302,11 @@
 さすが深雪ちゃん！[r]
 これでばっちりだね！[p]
 
-[ChangeCharaFace name="sakura" face="surprise"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="sakura" face="surprise"]
+[else]
+    [ChangeCharaFace name="sakura" face="surprise_idoldress"]
+[endif]
 #桜良
 そういえば、深雪ちゃんっていつから写真を始めたの？[p]
 
@@ -259,27 +315,47 @@
 急になにかしら？[p]
 
 [FreeDispQuestion]
-[ChangeCharaFace name="sakura" face="trouble"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="sakura" face="trouble"]
+[else]
+    [ChangeCharaFace name="sakura" face="trouble_idoldress"]
+[endif]
 #桜良
 あ、その、純粋に気になって...[r]
 もしかして聞かれたくなかった？[p]
 
 [DispQS_Left]
-[ChangeCharaFace name="miyuki" face="surprise"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="miyuki" face="surprise"]
+[else]
+    [ChangeCharaFace name="miyuki" face="surprise_idoldress"]
+[endif]
 #深雪
 違うわ！[r]
 興味を持ってくれたことに少し驚いただけ！[p]
 
 [FreeDispQS]
-[ChangeCharaFace name="sakura" face="close_mouth"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="sakura" face="close_mouth"]
+[else]
+    [ChangeCharaFace name="sakura" face="close_mouth_idoldress"]
+[endif]
 #桜良
 そっか、よかったあ...[p]
 
-[ChangeCharaFace name="miyuki" face="normal"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="miyuki" face="normal"]
+[else]
+    [ChangeCharaFace name="miyuki" face="normal_idoldress"]
+[endif]
 #深雪
 始めたきっかけは、撮りたいものができたから。[p]
 
-[ChangeCharaFace name="sakura" face="normal"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="sakura" face="normal"]
+[else]
+    [ChangeCharaFace name="sakura" face="normal_idoldress"]
+[endif]
 #桜良
 素敵だね！[r]
 風景とか、動物とか？[p]
@@ -289,12 +365,20 @@
 まあ、本当に撮りたいものは、まだ撮ったことがないけれどね。[p]
 
 [DispSurprised_Right]
-[ChangeCharaFace name="sakura" face="surprise"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="sakura" face="surprise"]
+[else]
+    [ChangeCharaFace name="sakura" face="surprise_idoldress"]
+[endif]
 #桜良
 えっ、最近始めたわけじゃないんだよね？[p]
 
 [FreeDispSurprised]
-[ChangeCharaFace name="miyuki" face="seriously"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="miyuki" face="seriously"]
+[else]
+    [ChangeCharaFace name="miyuki" face="seriously_idoldress"]
+[endif]
 #深雪
 ええ。もう数年は続けてる。[p]
 
@@ -302,12 +386,20 @@
 そんなに撮るのが難しいものなの？[p]
 
 [DispMusicalNote_Left]
-[ChangeCharaFace name="miyuki" face="smile"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="miyuki" face="smile"]
+[else]
+    [ChangeCharaFace name="miyuki" face="smile_idoldress"]
+[endif]
 #深雪
 ふふ、内緒。[p]
 
 [FreeDispMusicalNote]
-[ChangeCharaFace name="sakura" face="trouble"]
+[if exp="f.isChangeDress == 'false' "]
+    [ChangeCharaFace name="sakura" face="trouble"]
+[else]
+    [ChangeCharaFace name="sakura" face="trouble_idoldress"]
+[endif]
 #桜良
 そ、そんなあ～！[p]
 [endnolog]

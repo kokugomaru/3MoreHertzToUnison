@@ -1,4 +1,4 @@
-; 背景画像：深雪自室（フリー素材、余裕があれば作成）
+[cg storage="epilogue/normal/miyukiroom.png"]
 [DispLocation text="深雪の部屋"]
 [iscript]
     let html=`
@@ -71,8 +71,6 @@ _　脱出成功だよ！！」[p]
 事務所へ行ってみましょう。[p]
 
 [HideMiyuki]
-; 深雪の自室を追加したら削除予定
-[Freelayer1]
 [ChangeBackGround storage="epilogue/normal/office.png"]
 [cg storage="epilogue/office.png"]
 [DeleteDispLocation]
@@ -387,7 +385,6 @@ _　桜良の笑顔が魅力的で目を合わせられない...）[p]
 ...うん、もちろん！[rhr]
 それじゃあまた後でね！[p]
 [messageFalse]
-[Freelayer1]
 [HideAll]
 [DeleteDispLocation]
 
