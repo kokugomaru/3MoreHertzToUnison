@@ -19,6 +19,11 @@
     [call storage="Conversation/episode_op.ks"]
     [cg storage="opening/dressingroom.png"]
     [messageFalse]
+    ; CG解放通知を表示（初回プレイ時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+        [p_notify text="&f.notify_cg"]
+        [wait time="2500"]
+    [endif]
     [autostop]
     [cancelskip]
 [endif]
@@ -52,6 +57,10 @@
         f.isOpenDesc_05 = 'true'
         f.isOpenDesc_06 = 'true'
     [endscript]
+    ; 用語解放通知を表示（初回プレイ時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+        [p_notify text="&f.notify_glossary"]
+    [endif]
     [clearfix]
     [messageFalse]
     [MenuButton]
@@ -195,6 +204,10 @@
     [messageTrue]
     [call storage="Conversation/episode1/episode1_ed.ks"]
     [cg storage="episode1/stageroom.png"]
+    ; CG解放通知を表示（初回プレイ時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+        [p_notify text="&f.notify_cg"]
+    [endif]
     [autostop]
     [cancelskip]
 [endif]
@@ -204,6 +217,10 @@
         f.isMikeGet = 1
         f.isOpenDesc_07 = 'true'
     [endscript]
+    ; 用語解放通知を表示（初回プレイ時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+        [p_notify text="&f.notify_glossary"]
+    [endif]
 [endif]
 ; 体験版の場合はタイトル画面に遷移する
 [if exp="sf.trialVerMode == 'true' "]

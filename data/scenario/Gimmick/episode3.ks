@@ -168,11 +168,19 @@
     [autostop]
     [cancelskip]
 [endif]
+; CG解放通知を表示（初回プレイ時のみ表示）
+[if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+    [p_notify text="&f.notify_cg"]
+[endif]
 [iscript]
     f.isYoukanGet = 1
     f.isEpisode3Clear = 1
     f.isOpenDesc_09 = 'true'
 [endscript]
+; 用語解放通知を表示（初回プレイ時のみ表示）
+[if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+    [p_notify text="&f.notify_glossary"]
+[endif]
 
 ; シナリオ_エンディング
 [if exp="f.scn_skip == 0 && sf.scn_episodeED_Skip == 'false' "]
@@ -246,6 +254,10 @@
         [call storage="Conversation/ending/episode_true_ed.ks" target="*TrueEndRoute"]
     [endif]
     [messageFalse]
+    ; CG解放通知を表示（TrueEnd初回クリア時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isTrueEndCleared == 'false' "]
+        [p_notify text="&f.notify_cg"]
+    [endif]
     [autostop]
     [cancelskip]
 [endif]
@@ -270,6 +282,17 @@
         [call storage="Conversation/epilogue/episode_normal_ep.ks"]
     [endif]
     [messageFalse]
+    ; CG解放通知を表示（TrueEnd初回クリア時のみ表示）
+    [if exp="f.selectedEDRoute == 'True' && f.isTrueEndCleared == 'false' "]
+        [if exp="TYRANO.kag.stat.is_skip == false "]
+            [p_notify text="&f.notify_cg"]
+        [endif]
+    ; CG解放通知を表示（NormalEnd初回クリア時のみ表示）
+    [elsif exp="f.selectedEDRoute == 'Normal' && f.isNoamalEndCleared == 'false' "]
+        [if exp="TYRANO.kag.stat.is_skip == false "]
+            [p_notify text="&f.notify_cg"]
+        [endif]
+    [endif]
     [autostop]
     [cancelskip]
     [clearfix]
@@ -299,9 +322,20 @@
     [call storage="Conversation/endroll/endroll.ks"]
 [endif]
 *SkipEndroll
-[iscript]
-    f.isFirstGameClear = 'true'
-[endscript]
+[if exp="f.isFirstGameClear == 'false' "]
+    [iscript]
+        f.isFirstGameClear = 'true'
+    [endscript]
+[endif]
+[if exp="f.selectedEDRoute == 'True' && f.isTrueEndCleared == 'false' "]
+    [iscript]
+        f.isTrueEndCleared = 'true'
+    [endscript]
+[elsif exp="f.selectedEDRoute == 'Normal' && f.isNoamalEndCleared == 'false' "]
+    [iscript]
+        f.isNoamalEndCleared = 'true'
+    [endscript]
+[endif]
 [wait time="5000"]
 ; エンドロール再生後、タイトル画面へ画面遷移
 [jump storage="title.ks" target="*TopPage"]

@@ -23,6 +23,7 @@ TyranoScript (Ver.521k)
 - [ローディング画面表示プラグイン](https://mamecho.booth.pm/items/3011729)
 - [ループクェイクプラグイン](https://booth.pm/ja/items/2676939)
 - [メニューSE追加プラグイン](https://memocho.booth.pm/items/3008345)
+- [通知表示プラグイン](https://traumarchen.booth.pm/items/6412829)
 - [システムスワイププラグイン](https://note.com/milkcat/n/naaeade56fcf5)
 - [ゲームUIセット vol.16](https://ko10panda.booth.pm/items/3969477)
 <br>
