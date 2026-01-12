@@ -126,11 +126,19 @@
         [autostop]
         [cancelskip]
     [endif]
+    ; CG解放通知を表示（初回プレイ時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+        [p_notify text="&f.notify_cg"]
+    [endif]
     [iscript]
         f.isEpisode2Clear = 1
         f.isOpenDesc_08 = 'true'
         f.isChangeDress = 'false'
     [endscript]
+    ; 用語解放通知を表示（初回プレイ時のみ表示）
+    [if exp="TYRANO.kag.stat.is_skip == false && f.isFirstGameClear == 'false' "]
+        [p_notify text="&f.notify_glossary"]
+    [endif]
     [layer1True]
     [SavePoint]
     ; 思い出3へ移動する

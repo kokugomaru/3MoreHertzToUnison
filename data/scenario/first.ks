@@ -13,6 +13,7 @@
 [plugin name="loading"]
 [plugin name="loop_quake"]
 [plugin name="menu_se"]
+[plugin name="notify_show"]
 [plugin name="system_swipe"]
 [plugin name="theme_kopanda_bth_06_blue"]
 
@@ -37,6 +38,8 @@
 [call storage="Utility/getclientinfo.ks"]
 ; メニューSEのパラメータを読み込み
 [call storage="Plugin/menuse.ks"]
+; 通知表示のパラメータを読み込み
+[call storage="Plugin/notify_show.ks"]
 
 ; 実行環境がブラウザ版の場合、起動時にゲームデータを一括読み込み
 [if exp="sf.distribution == false "]

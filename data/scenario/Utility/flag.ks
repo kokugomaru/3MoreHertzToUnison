@@ -19,6 +19,10 @@
     f.selectedEDRoute = ''
     // 初回ゲームクリア判定
     f.isFirstGameClear = 'false'
+    // NormalEndクリア済み判定
+    f.isNoamalEndCleared = 'false'
+    // TrueEndクリア済み判定
+    f.isTrueEndCleared = 'false'
     // 用語の開放判定
     f.isOpenDesc_01 = 'false'
     f.isOpenDesc_02 = 'false'

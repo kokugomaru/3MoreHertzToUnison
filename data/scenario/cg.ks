@@ -214,7 +214,7 @@
 [endscript]
 
 ; まだ表示すべき差分画像が残っているなら、このラベルに飛びなおします。
-[if exp=" tf.selected_cg_image.length > tf.cg_index "]
+[if exp="tf.selected_cg_image.length > tf.cg_index "]
     [jump target="*cg_next_image"]
 [else]
     [freeimage layer="1" page="back"]

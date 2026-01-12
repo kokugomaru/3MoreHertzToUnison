@@ -8,7 +8,7 @@
     // サークル名
     sf.circleName = '深夜三十時'
     // クレジット
-    sf.credit = '©️2025'+'&nbsp'+sf.circleName
+    sf.credit = '©️2026'+'&nbsp'+sf.circleName
     // 配色一覧
     sf.colorScheme = ['0x444444','0x196D7D','0x89DAE3','0x505050','0xF5F5F5'] // [黒],[濃緑],[水色],[灰色],[白色]
     // 配布形式
