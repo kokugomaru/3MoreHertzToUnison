@@ -82,8 +82,11 @@
 [endif]
 ; 収納ボックス
 [if exp="f.isFutonGet == 0 && f.isUsing == 0"]
-    [clickJudgment x="275" y="705" width="315" height="178" target="*SearchBox"]
+    [clickJudgment x="270" y="705" width="220" height="175" target="*SearchBox"]
+    [clickJudgment x="490" y="705" width="100" height="104" target="*SearchBox"]
 [endif]
+; 救急キット
+[clickJudgment x="490" y="810" width="120" height="70" target="*SearchEmergencyKit"]
 ; 鞄（コンパス）
 [if exp="f.isCompassGet == 0 && f.isUsing == 0"]
     [clickJudgment x="720" y="640" width="160" height="225" target="*GetCompass"]
@@ -96,6 +99,8 @@
 [if exp="f.isUsing == 0"]
     [clickJudgment x="1060" y="545" width="125" height="80" target="*SearchHat"]
 [endif]
+; 占い本
+[clickJudgment x="1320" y="515" width="60" height="100" target="*SearchFortuneTellingBook"]
 ; ジャケット
 [if exp="f.isJacketGet == 0"]
     [clickJudgment x="1160" y="760" width="130" height="130" target="*GetJacket"]
@@ -187,7 +192,7 @@
     [ControlButtons]
     ; 隠し要素を全て回収している場合はTrueEndへの分岐が現れる
     ; 隠し要素を全て回収していない場合は選択肢自体が表示されず、強制的にNormalEndに突入する
-    [if exp="f.episode1_Secret == 'true' && f.episode2_Secret == 'true' && f.episode3_Secret == 'true' "]
+    [if exp="f.isSearchedCD == 'true' && f.isSearchedGlowStick == 'true' && f.isSearchedFan == 'true' && f.isSearchedInstantCamera == 'true' && f.isSearchedScoreShreet == 'true' && f.isSearchedMannequin == 'true' && f.isSearchedFortuneTellingBook == 'true' && f.isSearchedStarChart == 'true' && f.isSearchedEmergencyKit == 'true' "]
         [messageTrue]
         *SelecteRoute
         [autostop]
@@ -554,6 +559,25 @@
 [endscript]
 [JumpBedRoom]
 
+*SearchEmergencyKit
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode3/episode3_11.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedEmergencyKit == 'false' "]
+    [iscript]
+        f.isSearchedEmergencyKit = 'true'
+    [endscript]
+[endif]
+[JumpBedRoom]
+
 *GetCompass
 [if exp="f.scn_skip == 0"]
     [ControlButtons]
@@ -621,12 +645,54 @@
         f.isClickedHat_first = 'false'
     [endscript]
 [endif]
+*SearchHat_AfterConversation
+; 星図
+[clickJudgment x="1200" y="210" width="410" height="430" target="*SearchStarChart"]
 ; 戻るボタン
 [BackFromEnlargedMap target="*SearchHat_back"]
 [s]
 
 *SearchHat_back
 [cm]
+[JumpBedRoom]
+
+*SearchStarChart
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode3/episode3_10.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedStarChart == 'false' "]
+    [iscript]
+        f.isSearchedStarChart = 'true'
+    [endscript]
+[endif]
+[clearfix]
+[jump target="*SearchHat_AfterConversation"]
+
+*SearchFortuneTellingBook
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode3/episode3_09.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedFortuneTellingBook == 'false' "]
+    [iscript]
+        f.isSearchedFortuneTellingBook = 'true'
+    [endscript]
+[endif]
 [JumpBedRoom]
 
 *GetJacket

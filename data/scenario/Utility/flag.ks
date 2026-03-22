@@ -76,6 +76,10 @@
     f.isLightCoverGet = 0
     f.isDriverGet = 0
     f.isMikeGet = 0
+    // 思い出1隠し要素
+    f.isSearchedCD = 'false'
+    f.isSearchedGlowStick = 'false'
+    f.isSearchedFan = 'false'
     // 思い出2
     f.isEpisode2Clear = 0
     f.isTentDown = 0
@@ -88,6 +92,10 @@
     f.isGreenBlockGet = 0
     f.isKeyOpen = 0
     f.isCurtainGet = 0
+    // 思い出2隠し要素
+    f.isSearchedInstantCamera = 'false'
+    f.isSearchedScoreShreet = 'false'
+    f.isSearchedMannequin = 'false'
     // 思い出3
     f.isEpisode3Clear = 0
     f.isFutonGet = 0
@@ -96,9 +104,9 @@
     f.isJutanOpen = 0
     f.isRoomLightNight = 0
     f.isYoukanGet = 0
-    // 隠し要素
-    f.episode1_Secret = 'false'
-    f.episode2_Secret = 'false'
-    f.episode3_Secret = 'false'
+    // 思い出3隠し要素
+    f.isSearchedFortuneTellingBook = 'false'
+    f.isSearchedStarChart = 'false'
+    f.isSearchedEmergencyKit = 'false'
 [endscript]
 [return]

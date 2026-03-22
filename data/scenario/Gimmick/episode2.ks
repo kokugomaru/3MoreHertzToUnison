@@ -82,6 +82,10 @@
 [if exp="f.isPencilGet == 0"]
     [clickJudgment x="1765" y="590" width="150" height="150" target="*SearchMakeBox"]
 [endif]
+; スコアシート
+[clickJudgment x="1830" y="870" width="90" height="70" target="*SearchScoreShreet"]
+; インスタントカメラ
+[clickJudgment x="1550" y="600" width="100" height="60" target="*SearchInstantCamera"]
 ; ブロック
 [if exp="f.isBlueBlockGet == 0 && f.isRedBlockGet == 0 && f.isGreenBlockGet == 0"]
     [clickJudgment x="265" y="527" width="100" height="100" target="*GetBlock"]
@@ -92,8 +96,10 @@
 [endif]
 ; 簡易更衣室
 [if exp="f.isHangerGet != 0 && f.isCurtainGet != -1 && f.isDressGet != -1"]
-    [clickJudgment x="1" y="210" width="265" height="750" target="*SearchFittingRoom"]
+    [clickJudgment x="80" y="210" width="180" height="750" target="*SearchFittingRoom"]
 [endif]
+; マネキン
+[clickJudgment x="0" y="300" width="80" height="720" target="*SearchMannequin"]
 [s]
 
 *SearchCamera
@@ -304,6 +310,44 @@
 [iscript]
     f.isPencilGet = 1
 [endscript]
+[JumpStudioRoom]
+
+*SearchScoreShreet
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode2/episode2_09.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedScoreShreet == 'false' "]
+    [iscript]
+        f.isSearchedScoreShreet = 'true'
+    [endscript]
+[endif]
+[JumpStudioRoom]
+
+*SearchInstantCamera
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode2/episode2_08.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedInstantCamera == 'false' "]
+    [iscript]
+        f.isSearchedInstantCamera = 'true'
+    [endscript]
+[endif]
 [JumpStudioRoom]
 
 *GetBlock
@@ -819,4 +863,23 @@
 *IncorrectItemOfCurtain
 [FreeItemBox]
 [MessageToUsingWrongItem]
+[JumpStudioRoom]
+
+*SearchMannequin
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode2/episode2_10.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedMannequin == 'false' "]
+    [iscript]
+        f.isSearchedMannequin = 'true'
+    [endscript]
+[endif]
 [JumpStudioRoom]

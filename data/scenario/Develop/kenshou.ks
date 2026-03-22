@@ -30,9 +30,9 @@
 [glink color="bth06" storage="Develop/debug.ks" target="*Save" text="思い出3終盤スキップ" x="420" y="130" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true" exp="sf.scn_episode3ED_Skip = 'true' "]
 [glink color="bth06" storage="Develop/debug.ks" target="*Save" text="EDスキップ" x="420" y="230" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true" exp="sf.scn_episodeED_Skip = 'true' "]
 [glink color="bth06" storage="Develop/debug.ks" target="*Save" text="EPスキップ" x="420" y="315" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true" exp="sf.scn_episodeEP_Skip = 'true' "]
-[glink color="bth06" target="*SelectTrueEnd" text="TrueEnd選択" x="420" y="400" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
-[glink color="bth06" target="*PlayEndroll_Normal"  text="エンドロール再生(Normal)" x="420" y="485" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
-[glink color="bth06" target="*PlayEndroll_True"  text="エンドロール再生(True)" x="420" y="585" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
+[glink color="bth06" target="*SelectAllSecretCollection" text="隠し要素<br>全回収" x="420" y="400" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
+[glink color="bth06" target="*PlayEndroll_Normal"  text="エンドロール再生(Normal)" x="420" y="500" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
+[glink color="bth06" target="*PlayEndroll_True"  text="エンドロール再生(True)" x="420" y="600" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
 
 ; ------------------------------------------------------------
 ; システム関連
@@ -44,11 +44,17 @@
 [glink color="bth06" target="*ChangeIdolDress" text="アイドル衣装" x="720" y="400" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
 [s]
 
-*SelectTrueEnd
+*SelectAllSecretCollection
 [iscript]
-    f.episode1_Secret = 'true'
-    f.episode2_Secret = 'true'
-    f.episode3_Secret = 'true'
+    f.isSearchedCD = 'true'
+    f.isSearchedGlowStick = 'true'
+    f.isSearchedFan = 'true'
+    f.isSearchedInstantCamera = 'true'
+    f.isSearchedScoreShreet = 'true'
+    f.isSearchedMannequin = 'true'
+    f.isSearchedFortuneTellingBook = 'true'
+    f.isSearchedStarChart = 'true'
+    f.isSearchedEmergencyKit = 'true'
 [endscript]
 [jump target="*Kenshou"]
 

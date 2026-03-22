@@ -111,11 +111,15 @@
 [if exp="f.isCableGet == 0"]
     [clickJudgment x="1630" y="630" width="165" height="130" target="*SearchToolBox"]
 [endif]
+; うちわ
+[clickJudgment x="1700" y="770" width="80" height="55" target="*SearchFan"]
 ; ドライバー
 [if exp="f.isStageStatusGreen == 1 && f.isDriverGet == 0 && f.isUsing == 0"]
     [image storage="../image/episode1/driver_stage.png" layer="2" x="740" y="520" name="driver" time="10" wait="true"]
     [clickJudgment x="740" y="520" width="185" height="50" target="*GetDriver"]
 [endif]
+; ペンライト
+[clickJudgment x="255" y="970" width="100" height="30" target="*SearchGlowStick"]
 ; ライト
 [if exp="f.isLightStatusGreen == 0 && f.isUsing == 0"]
     [clickJudgment x="733" y="40" width="60" height="60" target="*SearchLight"]
@@ -139,7 +143,8 @@
 ; ボタン
 [clickJudgment target="*SearchControlPanel_Decision" x="700" y="810" width="170" height="140"]
 [image storage="../image/episode1/controlpanel/controlpanel_button_push.png" layer="1" x="690" y="800" name="controlpanel_button" time="10" wait="true"]
-
+; CD
+[clickJudgment target="*SearchCD" x="1520" y="860" width="310" height="180"]
 ; 準備完了ランプ
 [if exp="f.isStageStatusGreen == 1 && f.isLightStatusGreen == 1 && f.isSpeakerStatusGreen == 1"]
     [image storage="../image/episode1/controlpanel/controlpanel_complete.png" layer="1" x="950" y="850" name="controlpanel_lamp" time="10" wait="true"]
@@ -243,6 +248,34 @@
 [SavePoint]
 ; 思い出2へ移動する
 [jump storage="Gimmick/episode2.ks" cond="f.isEpisode1Clear == 1"]
+
+*SearchCD
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode1/episode1_06.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedCD == 'false' "]
+    [iscript]
+        f.isSearchedCD = 'true'
+    [endscript]
+[endif]
+; 画像を削除する
+[free layer="1" name="controlpanel_button" time="10" wait="true"]
+[free layer="1" name="controlpanel_lamp" time="10" wait="true"]
+[free layer="1" name="stage_greenlamp" time="10" wait="true"]
+[free layer="1" name="stage_redlamp" time="10" wait="true"]
+[free layer="1" name="light_greenlamp" time="10" wait="true"]
+[free layer="1" name="light_redlamp" time="10" wait="true"]
+[free layer="1" name="speaker_greenlamp" time="10" wait="true"]
+[free layer="1" name="speaker_redlamp" time="10" wait="true"]
+[JumpStageRoom]
 
 *SearchControlPanel_back
 ; 画像を削除する
@@ -629,12 +662,54 @@
 [free layer="1" name="cable" time="10" wait="true"]
 [JumpStageRoom]
 
+*SearchFan
+[Freelayer1]
+[Freelayer2]
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode1/episode1_08.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedFan == 'false' "]
+    [iscript]
+        f.isSearchedFan = 'true'
+    [endscript]
+[endif]
+[JumpStageRoom]
+
 *GetDriver
 [PlayGetItem]
 [iscript]
     f.isDriverGet = 1
 [endscript]
 [free layer="2" name="driver" time="10" wait="true"]
+[JumpStageRoom]
+
+*SearchGlowStick
+[Freelayer1]
+[Freelayer2]
+[if exp="f.scn_skip == 0"]
+    [ControlButtons]
+    [messageTrue]
+    [nolog]
+    [call storage="Conversation/episode1/episode1_07.ks"]
+    [endnolog]
+    [messageFalse]
+    [autostop]
+    [cancelskip]
+    [MenuButton]
+[endif]
+[if exp="f.isSearchedGlowStick == 'false' "]
+    [iscript]
+        f.isSearchedGlowStick = 'true'
+    [endscript]
+[endif]
 [JumpStageRoom]
 
 *SearchLight
