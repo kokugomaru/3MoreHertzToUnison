@@ -61,3 +61,7 @@
 	font-family:"JKG-M_3";
 	src:url("../JKG-M_3.ttf") format("truetype");
 }
+@font-face {
+	font-family:"Alivia-Regular";
+	src:url("../Alivia-Regular.ttf") format("truetype");
+}

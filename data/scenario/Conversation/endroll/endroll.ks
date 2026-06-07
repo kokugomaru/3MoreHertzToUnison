@@ -6,17 +6,16 @@
 [PlayEndrollBGM]
 
 [iscript]
-    tf.x = [600, 1000]          // X座標（[役職],[名前]）
-    tf.centerX = [925, 630]     // 中心のX座標（[スタッフ],[スタッフ以外]）
-    tf.width = [300, 660]       // 横幅（[役職],[役職以外]）
-    tf.textSize = 30            // 文字サイズ
-    tf.partsName = 'endRoll'    // 名前
-    tf.animationY = -30100      // アニメーション時のY座標（-XXで記載）
-    tf.animationTime = 118400   // アニメーションの時間
+    tf.x = [600, 1000]               // X座標（[役職],[名前]）
+    tf.centerX = [925, 630, 865]     // 中心のX座標（[スタッフ],[スタッフ以外],[ロゴ]）
+    tf.width = [300, 660]            // 横幅（[役職],[役職以外]）
+    tf.textSize = 30                 // 文字サイズ
+    tf.partsName = 'endRoll'         // 名前
+    tf.animationY = -30500           // アニメーション時のY座標（-XXで記載）
+    tf.animationTime = 118400        // アニメーションの時間
 [endscript]
-
 ; スタッフ
-[ptext layer="1" text="STAFF." x="&tf.centerX[0]" y="1500" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
+[ptext layer="1" text="STAFF" x="&tf.centerX[0]" y="1500" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
 ; 企画
 [ptext layer="1" text="企画" x="&tf.x[0]" y="1700" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[0]" align="right"]
 [ptext layer="1" text="国語丸" x="&tf.x[1]" y="1700" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
@@ -51,8 +50,8 @@
 [ptext layer="1" text="国語丸" x="&tf.x[1]" y="7000" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
 ; デバッグ
 [ptext layer="1" text="デバッグ" x="&tf.x[0]" y="7600" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[0]" align="right"]
-[ptext layer="1" text="国語丸" x="&tf.x[1]" y="7600" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
-[ptext layer="1" text="PON茶屋" x="&tf.x[1]" y="7700" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
+[ptext layer="1" text="PON茶屋" x="&tf.x[1]" y="7600" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
+[ptext layer="1" text="国語丸" x="&tf.x[1]" y="7700" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
 ; 制作進行
 [ptext layer="1" text="制作進行" x="&tf.x[0]" y="8300" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[0]" align="right"]
 [ptext layer="1" text="国語丸" x="&tf.x[1]" y="8300" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
@@ -127,9 +126,10 @@
 [ptext layer="1" text="Special &nbsp; Thanks" x="&tf.centerX[1]" y="26800" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[1]" align="center"]
 [ptext layer="1" text="椎名みのん" x="&tf.centerX[1]" y="26900" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[1]" align="center"]
 
-; 制作・著作
+; 制作
 [ptext layer="1" text="制作" x="&tf.centerX[0]" y="29900" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName"]
-[ptext layer="1" text="深夜三十時" x="&tf.centerX[1]" y="30000" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[1]" align="center"]
+[ptext layer="1" text="&sf.circleName" x="&tf.centerX[1]" y="30000" size="&tf.textSize" color="&sf.colorScheme[4]" name="&tf.partsName" width="&tf.width[1]" align="center"]
+[image layer="1" storage="../image/logo/circlelogo.png" x="&tf.centerX[2]" y="30200" name="&tf.partsName" width="200" height="200"]
 
 [wait time="1"]
 
@@ -153,10 +153,11 @@
 ; ------------------------------------------------------------
 ;　エンド分岐表示
 ; ------------------------------------------------------------
+[font face="Alivia-Regular"]
 [if exp="f.selectedEDRoute == 'True' "]
-    [ptext layer="1" text="True &nbsp; End" x="870" y="500" size="40" color="&sf.colorScheme[4]" name="&tf.partsName"]
+    [ptext layer="1" text="True &nbsp; End" x="790" y="400" size="108" color="&sf.colorScheme[4]" name="&tf.partsName"]
 [else]
-    [ptext layer="1" text="Normal &nbsp; End" x="850" y="500" size="40" color="&sf.colorScheme[4]" name="&tf.partsName"]
+    [ptext layer="1" text="Normal &nbsp; End" x="720" y="400" size="108" color="&sf.colorScheme[4]" name="&tf.partsName"]
 [endif]
 [wait time="5000"]
 [FadeoutBGM]
@@ -172,6 +173,7 @@
     delete tf.animationTime
 [endscript]
 [Freelayer1]
+[font face="JKG-M_3"]
 [if exp="f.isFirstGameClear == 'true' "]
     [cm]
 [endif]

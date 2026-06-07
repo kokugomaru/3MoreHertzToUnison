@@ -267,7 +267,7 @@
     [cancelskip]
 [endif]
 [FadeoutBGM]
-[blackout exp="f.selectedEDRoute == 'True' " storage_1="episode3/bedroom_night.png" storage_2="epilogue/normal/miyukiroom.png"]
+[blackout exp="f.selectedEDRoute == 'True' " storage_1="epilogue/true/metasequoia_01.png" storage_2="epilogue/normal/miyukiroom.png"]
 
 ; シナリオ_エピローグ
 [if exp="f.scn_skip == 0 && sf.scn_episodeEP_Skip == 'false' "]
@@ -279,6 +279,8 @@
         [PlayEpisodeNormalEpBGM]
     [endif]
     [messageTrue]
+    [Freelayer1]
+    [layer1True]
     ; TrueEndルート
     [if exp="f.selectedEDRoute == 'True' "]
         [call storage="Conversation/epilogue/episode_true_ep.ks"]

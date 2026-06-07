@@ -42,6 +42,7 @@
 [glink color="bth06" target="*CgAllOpen" text="CG全開放" x="720" y="230" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
 [glink color="bth06" target="*GlossaryAllOpen" text="用語全開放" x="720" y="315" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
 [glink color="bth06" target="*ChangeIdolDress" text="アイドル衣装" x="720" y="400" width="150" height="30" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
+[glink color="bth06" target="*ChangeBackgroundImage" text="背景画像変更<br>(TrueEnd)" x="720" y="400" width="150" height="45" clickse="../sound/se/itemdecision.m4a" size="24" bold="true"]
 [s]
 
 *SelectAllSecretCollection
@@ -95,7 +96,6 @@
 [jump target="*Kenshou"]
 
 *CgAllOpen
-[cg storage="opening/dressingroom.png"]
 [cg storage="episode1/stageroom.png"]
 [cg storage="episode1/miyukisolostage.png"]
 [cg storage="episode2/studioroom.png"]
@@ -105,6 +105,9 @@
 [cg storage="ending/true/32.png"]
 [cg storage="epilogue/normal/miyukiroom.png"]
 [cg storage="epilogue/normal/lookbackmiyuki.png"]
+[cg storage="epilogue/true/metasequoia_01.png"]
+[cg storage="epilogue/true/metasequoia_02.png"]
+[cg storage="epilogue/true/metasequoia_03.png"]
 [jump target="*Kenshou"]
 
 *GlossaryAllOpen
@@ -126,6 +129,14 @@
     f.isChangeDress = 'true';
 [endscript]
 [jump target="*Kenshou"]
+
+*ChangeBackgroundImage
+[iscript]
+    f.isFirstGameClear = 'true'
+    f.isTrueEndCleared = 'true'
+[endscript]
+[clearstack]
+[jump storage="title.ks" target="*TopPage"]
 
 *Backtitle
 [cm]

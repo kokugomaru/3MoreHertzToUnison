@@ -175,7 +175,7 @@
             [iscript]
                 tf.isCharacter = 1
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_02_click.png" y="380" enterimg="glossary/glossary_select_02_hover.png" exp="tf.selectedDescription = 2" descriptionNo="2" storage="chara/sakura/normal.png" furigana="さいとう　さくら" x="1360" name="&String('斎藤\x20桜良')" age="19歳" bloodtype="O型" birthday="5月5日" stature="159cm" birthplace="千葉県" hobby="カラオケ" specialskill="ボウリング" motif="ヤドカリ" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_02_click.png" y="380" enterimg="glossary/glossary_select_02_hover.png" exp="tf.selectedDescription = 2" descriptionNo="2" storage="../fgimage/sakura/normal/normal.png" furigana="さいとう　さくら" x="1360" name="&String('斎藤\x20桜良')" age="19歳" bloodtype="O型" birthday="5月5日" stature="159cm" birthplace="千葉県" hobby="カラオケ" specialskill="ボウリング" motif="ヤドカリ" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_02"]
             [deleteDetailDescription]
@@ -204,7 +204,7 @@
             [iscript]
                 tf.isCharacter = 1
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_03_click.png" y="460" enterimg="glossary/glossary_select_03_hover.png" exp="tf.selectedDescription = 3" descriptionNo="3" storage="chara/miyuki/normal.png" furigana="くろい　みゆき" x="1370" name="&String('黒井\x20深雪')" age="18歳" bloodtype="A型" birthday="2月2日" stature="163cm" birthplace="東京都" hobby="写真" specialskill="ピアノ" motif="クリオネ" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_03_click.png" y="460" enterimg="glossary/glossary_select_03_hover.png" exp="tf.selectedDescription = 3" descriptionNo="3" storage="../fgimage/miyuki/normal/normal.png" furigana="くろい　みゆき" x="1370" name="&String('黒井\x20深雪')" age="18歳" bloodtype="A型" birthday="2月2日" stature="163cm" birthplace="東京都" hobby="写真" specialskill="ピアノ" motif="クリオネ" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_03"]
             [deleteDetailDescription]
@@ -233,7 +233,7 @@
             [iscript]
                 tf.isCharacter = 1
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_04_click.png" y="540" enterimg="glossary/glossary_select_04_hover.png" exp="tf.selectedDescription = 4" descriptionNo="4" storage="chara/yuno/normal.png" image_x="910" image_y="380" width="400" height="400" furigana="こもり　ゆの" x="1370" name="&String('小森\x20柚乃')" age="17歳" bloodtype="？？？" birthday="？？？" stature="？？？" birthplace="？？？" hobby="？？？" specialskill="？？？" motif="シロイルカ" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_04_click.png" y="540" enterimg="glossary/glossary_select_04_hover.png" exp="tf.selectedDescription = 4" descriptionNo="4" storage="../fgimage/yuno/normal.png" image_x="910" image_y="380" width="400" height="400" furigana="こもり　ゆの" x="1370" name="&String('小森\x20柚乃')" age="17歳" bloodtype="？？？" birthday="？？？" stature="？？？" birthplace="？？？" hobby="？？？" specialskill="？？？" motif="シロイルカ" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_04"]
             [deleteDetailDescription]
@@ -262,7 +262,7 @@
             [iscript]
                 tf.isCharacter = 1
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_05_click.png" y="620" enterimg="glossary/glossary_select_05_hover.png" exp="tf.selectedDescription = 5" descriptionNo="5" storage="chara/akari/normal.png" image_x="910" image_y="380" width="400" height="400" furigana="とうどう　あかり" x="1360" name="&String('東党\x20朱理')" age="19歳" bloodtype="？？？" birthday="？？？" stature="？？？" birthplace="？？？" hobby="？？？" specialskill="？？？" motif="グッピー" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_05_click.png" y="620" enterimg="glossary/glossary_select_05_hover.png" exp="tf.selectedDescription = 5" descriptionNo="5" storage="../fgimage/akari/normal.png" image_x="910" image_y="380" width="400" height="400" furigana="とうどう　あかり" x="1360" name="&String('東党\x20朱理')" age="19歳" bloodtype="？？？" birthday="？？？" stature="？？？" birthplace="？？？" hobby="？？？" specialskill="？？？" motif="グッピー" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_05"]
             [deleteDetailDescription]
@@ -291,7 +291,7 @@
             [iscript]
                 tf.isCharacter = 1
             [endscript]
-            [openDetailDescription graphic="glossary/glossary_select_06_click.png" y="700" enterimg="glossary/glossary_select_06_hover.png" exp="tf.selectedDescription = 6" descriptionNo="6" storage="chara/honami/normal.png" image_x="910" image_y="380" width="400" height="400" furigana="あまた　ほなみ" x="1370" name="&String('天田\x20帆南')" age="18歳" bloodtype="？？？" birthday="？？？" stature="？？？" birthplace="？？？" hobby="？？？" specialskill="？？？" motif="ネオンテトラ" description="※ここに説明を追加する"]
+            [openDetailDescription graphic="glossary/glossary_select_06_click.png" y="700" enterimg="glossary/glossary_select_06_hover.png" exp="tf.selectedDescription = 6" descriptionNo="6" storage="../fgimage/honami/normal.png" image_x="910" image_y="380" width="400" height="400" furigana="あまた　ほなみ" x="1370" name="&String('天田\x20帆南')" age="18歳" bloodtype="？？？" birthday="？？？" stature="？？？" birthplace="？？？" hobby="？？？" specialskill="？？？" motif="ネオンテトラ" description="※ここに説明を追加する"]
         [else]
             [clearfix name="description_06"]
             [deleteDetailDescription]

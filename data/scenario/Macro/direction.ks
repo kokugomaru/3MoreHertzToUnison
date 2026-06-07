@@ -22,8 +22,6 @@
             [if exp="f.isHangerGet == 0"]
                 [image storage="../image/episode2/hanger.png" layer="1" x="148" y="410" name="hanger" time="10" wait="true"]
             [endif]
-        [elsif exp="f.itemVisible[0] == 'true' && f.itemVisible[1] == 'episode2_dress' "]
-            ; 追加予定
         [elsif exp="f.itemVisible[0] == 'true' && f.itemVisible[1] == 'episode3' "]
             [if exp="f.isJacketGet == 0"]
                 [image storage="../image/episode3/jacket.png" layer="1" x="1150" y="750" name="jacket" time="10" wait="true"]

@@ -60,13 +60,13 @@
 
 ; 一段目
 [cg_image_button graphic="share/top.png" thumb="share/top.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="opening/dressingroom.png" thumb="opening/dressingroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="episode1/stageroom.png" thumb="episode1/stageroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="episode1/stageroom.png" thumb="episode1/stageroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="episode1/miyukisolostage.png" thumb="episode1/miyukisolostage.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
 ; 二段目
-[cg_image_button graphic="episode1/miyukisolostage.png" thumb="episode1/miyukisolostage.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="episode2/studioroom.png" thumb="episode2/studioroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="episode2/meetingofoffices.png" thumb="episode2/meetingofoffices.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="episode2/studioroom.png" thumb="episode2/studioroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="episode2/meetingofoffices.png" thumb="episode2/meetingofoffices.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="episode3/bedroom.png" thumb="episode3/bedroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
 ; 次ページへ
 [button graphic="append_theme/gallery_next.png" enterimg="append_theme/gallery_next2.png" target="*nextpage" x="1752" y="540" clickse="../sound/se/pagechange.m4a"]
@@ -83,14 +83,14 @@
 ; CG閲覧モード画面2ページ目
 
 ; 一段目
-[cg_image_button graphic="episode3/bedroom.png" thumb="episode3/bedroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="episode3/still/01.png" thumb="episode3/still/01.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="ending/true/32.png" thumb="ending/true/32.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="episode3/still/01.png" thumb="episode3/still/01.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="ending/true/32.png" thumb="ending/true/32.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="epilogue/normal/miyukiroom.png" thumb="epilogue/normal/miyukiroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
 ; 二段目
-[cg_image_button graphic="epilogue/normal/miyukiroom.png" thumb="epilogue/normal/miyukiroom.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="epilogue/normal/lookbackmiyuki.png" thumb="epilogue/normal/lookbackmiyuki.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="epilogue/normal/lookbackmiyuki.png" thumb="epilogue/normal/lookbackmiyuki.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="epilogue/true/metasequoia_01.png" thumb="epilogue/true/metasequoia_01.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="epilogue/true/metasequoia_02.png" thumb="epilogue/true/metasequoia_02.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
 ; 前のページへ
 [button graphic="append_theme/gallery_prev.png" enterimg="append_theme/gallery_prev2.png" target="*backpage" x="150" y="540" clickse="../sound/se/pagechange.m4a"]
@@ -109,14 +109,7 @@
 ; CG閲覧モード画面3ページ目
 
 ; 一段目
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-
-; 二段目
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[1]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
-[cg_image_button graphic="" thumb="" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[2]" y="&tf.cg_posy[1]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
+[cg_image_button graphic="epilogue/true/metasequoia_03.png" thumb="epilogue/true/metasequoia_03.png" no_graphic="../image/append_theme/lock.png" x="&tf.cg_posx[0]" y="&tf.cg_posy[0]" width="&tf.cg_thumbnail_width" height="&tf.cg_thumbnail_height"]
 
 ; 前ページへ
 [button graphic="append_theme/gallery_prev.png" enterimg="append_theme/gallery_prev2.png" target="*backpage" x="150" y="540" clickse="../sound/se/pagechange.m4a"]
