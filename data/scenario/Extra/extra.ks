@@ -10,7 +10,7 @@
 *Extra
 [button graphic="../others/plugin/theme_kopanda_bth_06_blue/image/config/back.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/config/back2.png" target="*Backtitle" x="1680" y="60" clickse="../sound/se/cancel.m4a"]
 [glink color="bth06" storage="cg.ks" text="CG" x="700" y="200" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
-[glink color="bth06" storage="Extra/glossary.ks" text="用語解説" x="1200" y="200" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
+[glink color="bth06" target="*Glossary" text="用語解説" x="1200" y="200" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*Contact" text="お問い合わせ" x="700" y="350" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*BugReport" text="不具合報告" x="1200" y="350" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*Infomation" text="お知らせ" x="700" y="500" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
@@ -18,6 +18,23 @@
 [glink color="bth06" target="*Guideline" text="ガイドライン" x="700" y="650" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [glink color="bth06" target="*OfficialSite" text="公式サイト" x="1200" y="650" width="250" height="50" clickse="../sound/se/decision.m4a" size="42" bold="true"]
 [s]
+
+; ------------------------------------------------------------
+;　用語解説
+; ------------------------------------------------------------
+*Glossary
+[if exp="sf.distribution == false "]
+    [DispModal text="用語解説を開きます。<br>よろしいですか？<br><br>※別タブでページが開きます" y="420" storage="Extra/extra.ks" target_yes="*OpenGlossary" target_no="*NotOpenGlossary"]
+[else]
+    [DispModal text="用語解説を開きます。<br>よろしいですか？<br><br>※Webブラウザが立ち上がります" y="420" storage="Extra/extra.ks" target_yes="*OpenGlossary" target_no="*NotOpenGlossary"]
+[endif]
+*OpenGlossary
+[web url="https://shinya30.notion.site/HP-3a2dc3cb3adf803eadb1d4ff86dceb76"]
+[FreeModal]
+[jump target="*Extra"]
+*NotOpenGlossary
+[FreeModal]
+[jump target="*Extra"]
 
 ; ------------------------------------------------------------
 ;　お問い合わせ

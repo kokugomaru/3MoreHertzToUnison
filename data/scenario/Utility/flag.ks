@@ -23,26 +23,6 @@
     f.isNoamalEndCleared = 'false'
     // TrueEndクリア済み判定
     f.isTrueEndCleared = 'false'
-    // 用語の開放判定
-    f.isOpenDesc_01 = 'false'
-    f.isOpenDesc_02 = 'false'
-    f.isOpenDesc_03 = 'false'
-    f.isOpenDesc_04 = 'false'
-    f.isOpenDesc_05 = 'false'
-    f.isOpenDesc_06 = 'false'
-    f.isOpenDesc_07 = 'false'
-    f.isOpenDesc_08 = 'false'
-    f.isOpenDesc_09 = 'false'
-    // 用語の既読判定
-    f.isReadDesc_01 = 'false'
-    f.isReadDesc_02 = 'false'
-    f.isReadDesc_03 = 'false'
-    f.isReadDesc_04 = 'false'
-    f.isReadDesc_05 = 'false'
-    f.isReadDesc_06 = 'false'
-    f.isReadDesc_07 = 'false'
-    f.isReadDesc_08 = 'false'
-    f.isReadDesc_09 = 'false'
     // 初回クリック判定
     f.isClickedControlPanel_first = 'true'
     f.isClickedWiringDoor_first = 'true'
