@@ -34,7 +34,7 @@
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-;[ItemDisp storage=""]
+[ItemDisp storage="../image/epilogue/gemeclearcard.png"]
 [ChangeCharaFace name="miyuki" face="trouble"]
 #深雪
 「おめでとう！[rhr]
@@ -46,7 +46,7 @@ _　脱出成功だよ！！」[p]
 #深雪
 「追伸：もっと勇気を出すといいことあるかも！」...？[p]
 
-;[FreeItemDisp]
+[FreeItemDisp]
 [iscript]
     f.charaPosition[0] = 'miyuki'
     f.charaPosition[1] = 'center'
