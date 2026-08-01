@@ -1,4 +1,4 @@
-; 背景画像：メタセコイヤの並木道
+[cg storage="epilogue/true/metasequoia_01.png"]
 [DispLocation text="メタセコイヤの並木道"]
 [iscript]
     let html=`
@@ -39,7 +39,8 @@
 わっ、ちょっと桜良、待って！[p]
 
 [FreeDispSweat]
-; 画面表示：スチル表示予定
+[ChangeBackGround storage="epilogue/true/metasequoia_02.png"]
+[cg storage="epilogue/true/metasequoia_02.png"]
 [HideAll]
 #桜良
 わあ、すっごい綺麗！[p]
@@ -58,6 +59,7 @@ _　ふわっとした笑顔...）[p]
 （ちょっとだけ、桜良と仲良くなれたって、[rhr]
 _　うぬぼれてもいいのかしら？）[p]
 
+[ChangeBackGround storage="epilogue/true/metasequoia_01.png"]
 [ShowMiyuki_Left]
 [ShowSakura_Right face="close_mouth"]
 #桜良
@@ -205,7 +207,7 @@ _　あまりにも記憶が鮮明すぎる）[p]
 [HideAll]
 [PlayFootStep]
 [messageFalse]
-[layer1False]
+[Freelayer1]
 [blackout exp="f.isRoomLightNight == 1" storage_1="epilogue/black.png" storage_2="epilogue/black.png"]
 [messageTrue]
 #桜良
@@ -223,11 +225,11 @@ _　あまりにも記憶が鮮明すぎる）[p]
 [DeleteDispLocation]
 [PlayPhotographing]
 [flasheffect]
-[blackout exp="f.isRoomLightNight == 1" storage_1="episode3/bedroom_night.png" storage_2="episode3/bedroom.png"]
+[blackout exp="f.isRoomLightNight == 1" storage_1="epilogue/true/metasequoia_03.png" storage_2="episode3/bedroom.png"]
+[cg storage="epilogue/true/metasequoia_03.png"]
 [messageTrue]
 [wait time="500"]
 [messageTrue]
-; 画面演出：スチル表示：桜良がぎゅっと深雪に抱き着いて撮ったツーショット写真
 
 #深雪
 桜良、あなた案外やんちゃなのね。[p]
@@ -241,7 +243,6 @@ _　あまりにも記憶が鮮明すぎる）[p]
 #深雪
 ふふっ、こちらこそよろしくね。[p]
 
-[Freelayer1]
 [ChangeBackGround storage="episode1/white.png" time="2000"]
 #謎のメッセージカード
 「脱出おめでとう！！[rhr]

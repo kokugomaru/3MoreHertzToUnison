@@ -57,7 +57,12 @@
 *TopPage
 [clearfix]
 [Freelayer1]
-[ChangeBackGround storage="share/top.png"]
+; 背景画像の切り替え
+[if exp="f.isTrueEndCleared == 'true' "]
+    [ChangeBackGround storage="epilogue/true/metasequoia_02.png"]
+[else]
+    [ChangeBackGround storage="share/top.png"]
+[endif]
 [image storage="../image/logo/titlelogo.png" layer="1" x="890" y="-50" width="800" height="640" name="titlelogo" time="10" wait="true"]
 [if exp="sf.trialVerMode == 'true' "]
     [image storage="../image/top/demo.png" layer="1" x="1080" y="530" width="400" height="72" name="demo" time="10" wait="true"]

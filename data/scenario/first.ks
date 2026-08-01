@@ -22,7 +22,6 @@
 [call storage="Macro/button.ks"]
 [call storage="Macro/character.ks"]
 [call storage="Macro/direction.ks"]
-[call storage="Macro/glossary.ks"]
 [call storage="Macro/item.ks"]
 [call storage="Macro/layer.ks"]
 [call storage="Macro/manpu.ks"]

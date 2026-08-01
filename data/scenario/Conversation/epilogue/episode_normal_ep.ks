@@ -34,7 +34,7 @@
     f.charaPosition[1] = 'left'
 [endscript]
 [ChangeCharaPosition]
-;[ItemDisp storage=""]
+[ItemDisp storage="../image/epilogue/gemeclearcard.png"]
 [ChangeCharaFace name="miyuki" face="trouble"]
 #深雪
 「おめでとう！[rhr]
@@ -46,7 +46,7 @@ _　脱出成功だよ！！」[p]
 #深雪
 「追伸：もっと勇気を出すといいことあるかも！」...？[p]
 
-;[FreeItemDisp]
+[FreeItemDisp]
 [iscript]
     f.charaPosition[0] = 'miyuki'
     f.charaPosition[1] = 'center'
@@ -72,7 +72,7 @@ _　脱出成功だよ！！」[p]
 
 [HideMiyuki]
 [ChangeBackGround storage="epilogue/normal/office.png"]
-[cg storage="epilogue/office.png"]
+[cg storage="epilogue/normal/office.png"]
 [DeleteDispLocation]
 [DispLocation text="事務所のロビー"]
 [iscript]
@@ -221,7 +221,7 @@ _　脱出成功だよ！！」[p]
 はい！今日もよろしくお願いします！[p]
 
 [ChangeBackGround storage="epilogue/normal/officehallway.png"]
-[cg storage="epilogue/officehallway.png"]
+[cg storage="epilogue/normal/officehallway.png"]
 [DeleteDispLocation]
 [DispLocation text="事務所の廊下"]
 [iscript]
