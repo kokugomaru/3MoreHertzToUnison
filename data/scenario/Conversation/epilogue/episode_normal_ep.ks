@@ -366,7 +366,7 @@ _　桜良の笑顔が魅力的で目を合わせられない...）[p]
 [HideSakura]
 [DeleteDispLocation]
 [ChangeBackGround storage="epilogue/normal/lookbackmiyuki.png" time="500"]
-[cg storage="epilogue/true/lookbackmiyuki.png"]
+[cg storage="epilogue/normal/lookbackmiyuki.png"]
 #深雪
 違うわ。[p]
 
