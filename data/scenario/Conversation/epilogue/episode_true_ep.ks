@@ -41,6 +41,7 @@
 [FreeDispSweat]
 [ChangeBackGround storage="epilogue/true/metasequoia_02.png"]
 [cg storage="epilogue/true/metasequoia_02.png"]
+[DeleteDispLocation]
 [HideAll]
 #桜良
 わあ、すっごい綺麗！[p]
@@ -62,6 +63,7 @@ _　うぬぼれてもいいのかしら？）[p]
 [ChangeBackGround storage="epilogue/true/metasequoia_01.png"]
 [ShowMiyuki_Left]
 [ShowSakura_Right face="close_mouth"]
+[DispLocation text="メタセコイヤの並木道"]
 #桜良
 初めて一緒に出掛けたけど、[rhr]
 喜んでくれてよかった！[p]
