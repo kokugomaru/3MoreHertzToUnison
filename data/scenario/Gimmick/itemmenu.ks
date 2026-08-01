@@ -63,7 +63,7 @@
     [iscript]
         tf.usingItemInventory3 = 1
     [endscript]
-    [image storage="../image/episode2/pencil.png" layer="2" x="860" y="350" visible="true" name="pencil"]
+    [image storage="../image/episode2/pencil.png" layer="2" x="860" y="350" width="140" height="140" visible="true" name="pencil"]
 [endif]
 [if exp="f.isBlueBlockGet== 1"]
     [iscript]
