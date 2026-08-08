@@ -107,7 +107,15 @@
         [endscript]
     [endif]
 [endif]
+; フルスクリーン表示確認
+[cm]
+[clearfix]
+[DispModal text="フルスクリーンでプレイしますか" storage="title.ks" target_yes="*YesButton_FullScreen" target_no="*NoButton_FullScreen"]
+*YesButton_FullScreen
+[FreeModal]
 [screen_full]
+*NoButton_FullScreen
+[FreeModal]
 ; デバッグ用に追加
 [jump storage="Gimmick/episode1.ks" cond="f.isEpisode1Clear == 0"]
 [jump storage="Gimmick/episode2.ks" cond="f.isEpisode1Clear == 1 && f.isEpisode2Clear == 0"]
